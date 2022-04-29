@@ -10,7 +10,10 @@ const CypherPunkSection = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.collection}>
-          <img src='/images/zerorender.png' className={styles.image1} />
+          <img src='/images/homepage/zerorender.png' className={styles.image1} />
+          <img src='/images/homepage/cypherpunk2.png' className={styles.image2} />
+          <img src='/images/homepage/cypherpunk1.png' className={styles.image3} />
+          <img src='/images/homepage/cypherpunk2.png' className={styles.image4} />
         </div>  
         <div className={styles.description}>
           The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 

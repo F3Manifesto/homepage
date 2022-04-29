@@ -44,12 +44,43 @@
     .collection {
       .image1 {
         position: absolute;
-        width: 482px;
-        height: 588px;
-        left: 228px;
-        top: 6915px;
+        width: 25.10vw;
+        height: 30.62vw;
+        left: 11.87vw;
+        top: 24.58vw;
+        border-radius: 27px;
+        object-fit: cover;
+      }
+
+      .image2 {
+        position: absolute;
+        width: 21.87vw;
+        height: 19.06vw;
+        left: 39.11vw;
+        top: 35.93vw;
+        
+        border-radius: 27px;
+        object-fit: cover;
+      }
+      
+      .image3 {
+        position: absolute;
+        width: 25.1vw;
+        height: 30.62vw;
+        left: 11.98vw;
+        top: 57.7vw;
         
         border-radius: 27px;        
+      }
+
+      .image4 {
+        position: absolute;
+        width: 21.87vw;
+        height: 19.06vw;
+        left: 39.11vw;
+        top: 57.81vw;
+        
+        border-radius: 27px;
       }
     }
 

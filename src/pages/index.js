@@ -25,6 +25,7 @@ import FreedomSection from '@components/FreedomSection'
 import CypherPunkSection from '@components/CypherPunkSection'
 import HyperUtilitySection from '@components/HyperUtilitySection'
 import GuideSection from '@components/GuideSection'
+import PatronSection from '@components/PatronSection'
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -144,11 +145,7 @@ function Landing(props) {
             <GuideSection />
           </section>
           <section className={styles.patronSection} id='patron_section'>
-            <div className={styles.title}>
-              BECOME A PATRON <br />
-              &<br />
-              JOIN THE DAO
-            </div>
+            <PatronSection />
           </section>
         </div>
       )
