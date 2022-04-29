@@ -1,0 +1,60 @@
+@import '../../../assets/scss/helpers/variables.scss';
+
+.productItemWrapper {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    cursor: pointer;
+
+    .productImage {
+      width: 15vw;
+      height: 25vw;
+      object-fit: contain;
+    }
+
+    transition: 0.3s all;
+    &:hover {
+      transition: 0.3s all;
+      transform: rotate(-8deg);
+    }
+  }
+  
+  .sellerWrapper {
+    margin-top: 2vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+      
+    .sellerImage {
+      width: 3vw;
+      border-radius: 50%;
+    }
+
+    .sellerName {
+      margin-left: 0.5vw;
+      color: $yellow;
+      font-family: 'Anonymous Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1vw;
+      line-height: 100%;
+    }
+  }
+
+  .title {
+    margin-top: 1vw;
+    color: $yellow;
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 100%;
+    text-align: center;
+  }
+}

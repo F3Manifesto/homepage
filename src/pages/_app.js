@@ -23,6 +23,11 @@ import '../assets/scss/global.scss'
 import 'tailwindcss/dist/tailwind.css'
 import '../styles/globals.css'
 
+import 'swiper/swiper.min.css'
+// import 'swiper/swiper.scss' // core Swiper
+// import 'swiper/modules/navigation/navigation.scss' // Navigation module
+// import 'swiper/modules/pagination/pagination.scss' // Pagination module
+
 if (config.SENTRY_DSN) {
   Sentry.init({
     dsn: config.SENTRY_DSN,
