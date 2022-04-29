@@ -202,6 +202,18 @@ class MyDocument extends Document {
               font-family: 'NewYork';
               src: url("./fonts/NewYork.otf");
             }
+
+            @font-face {
+              font-family: 'Apex Mk3';
+              font-weight: 500;
+              src: url("./fonts/Apex Mk3-Medium.otf");
+            }
+
+            @font-face {
+              font-family: 'Atmosphere';
+              font-weight: 400;
+              src: url("./fonts/Atmosphere-Regular.ttf");
+            }
           `,
             }}
           />

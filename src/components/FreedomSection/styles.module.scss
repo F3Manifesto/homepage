@@ -1,6 +1,36 @@
 @import '../../assets/scss/helpers/variables.scss';
 
 .freedomSectionWrapper {
+  .rect1 {
+    position: absolute;
+    width: 65.72vw;
+    height: 40.05vw;
+    left: 4.06vw;
+    top: 14.79vw;
+    
+    background: radial-gradient(110.36% 320.33% at 0% 110.36%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.594) 100%)    
+  }
+
+  .rect2 {
+    position: absolute;
+    width: 65.72vw;
+    height: 38.17vw;
+    left: 1.97vw;
+    top: 13.9vw;
+    
+    background: radial-gradient(100% 307.3% at 98.03% 15.27%, #000000 0%, rgba(0, 0, 0, 0.66) 100%)
+  }
+
+  .rect3 {
+    position: absolute;
+    width: 67.29vw;
+    height: 41.25vw;
+    left: 5.10vw;
+    top: 15.98vw;
+
+    background: radial-gradient(100% 307.3% at 98.03% 15.27%, #000000 0%, rgba(0, 0, 0, 0.66) 100%)
+  }
+
   .title {
     position: absolute;
     width: 68.54vw;
@@ -41,6 +71,14 @@
     -webkit-text-stroke: 0.02vw #FFFFFF;
   }
 
+  .imageInsert {
+    position: absolute;
+    width: 16.45vw;
+    height: 15.15vw;
+    left: 55.46vw;
+    top: 74.94vw;
+  }
+
   .imageFreedomFrame {
     position: absolute;
     width: 89.27vw;
@@ -48,4 +86,146 @@
     left: 5.36vw;
     top: 100vw; 
   }
+
+  .circle1 {
+    .innerCircle {
+      
+    }
+  }
+
+  .circle2 {
+    .innerCircle {
+
+    }
+  }
+
+  .circle3 {
+    .innerCircle {
+
+    }
+  }
+
+  .text1 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.34vw;
+    line-height: 3.17vw;
+    
+    display: flex;
+    align-items: center;
+    
+    color: $blue;    
+  }
+
+  .text2 {
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.88vw;
+    line-height: 112%;
+    
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .text3 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.34vw;
+    line-height: 3.17vw;
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+    
+  }
+
+  .text4 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 300;
+    
+    font-size: 3.12vw;
+    line-height: 4.21vw;
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .text5 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.6vw;
+    line-height: 3.54vw;
+
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .text6 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.38vw;
+    line-height: 4.58vw;
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .text7 {
+    font-family: 'LEMON MILK';
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 2.34vw;
+    line-height: 3.17vw;
+        
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .text8 {
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    
+    font-size: 0.88vw;
+    line-height: 112%;
+    
+    display: flex;
+    align-items: center;
+    
+    color: $blue;
+  }
+
+  .button {
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .buttonView {
+
+  }
+
+  .buttonSubscribe {
+
+  }
+
+  .buttonLibrary {
+
+  }
+  
 }

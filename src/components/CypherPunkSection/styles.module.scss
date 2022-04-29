@@ -1,0 +1,72 @@
+
+.cypherPunkWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  height: 100vw;
+
+  .zk_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;      
+  }
+
+  .title {
+    margin-top: 6.7vw;
+    height: 156px;
+    z-index: 1;
+    
+    font-family: 'Apex Mk3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.77vw;
+    line-height: 120%;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.26vw #000000;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+
+    .collection {
+      .image1 {
+        position: absolute;
+        width: 482px;
+        height: 588px;
+        left: 228px;
+        top: 6915px;
+        
+        border-radius: 27px;        
+      }
+    }
+
+    .description {
+      position: absolute;
+      width: 20.62vw;
+      height: 66.45vw;
+      left: 66.40vw;
+      top: 21.3vw;
+
+      font-family: 'NewYork';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4vw;
+      line-height: 120%;
+
+      color: #FFFFFF;
+    }
+  }      
+}
