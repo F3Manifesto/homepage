@@ -1,0 +1,100 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.howToSectionWrapper {
+
+  .category {
+    position: absolute;
+    width: 27.34vw;
+    left: 3.8vw;
+    top: 2.76vw;
+
+    li {
+      color: white;
+      font-family: 'Anonymous Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 6.25vw;
+      line-height: 100%;
+
+      &.selectable {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        &:hover {
+          background-color: white;
+          color: $blue;
+        }
+      }
+
+    }
+  }
+
+  // .description {
+  //   position: absolute;
+  //   width: 47.96vw;
+  //   height: 19.16vw;
+  //   left: 49.11vw;
+  //   top: 4.53vw;
+
+  //   font-family: 'Anonymous Pro';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 1.56vw;
+  //   line-height: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   text-align: center;
+
+  //   color: #FFFFFF;
+  // }
+
+  .rect1 {
+    position: absolute;
+    width: 50.52vw;
+    height: 26.56vw;
+    left: 24.73vw;
+    top: 16.56vw;
+    
+    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #322EF9 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.9;
+    z-index: 4;
+  }
+
+  .rect2 {
+    position: absolute;
+    width: 55.57vw;
+    height: 33.33vw;
+    left: 23.17vw;
+    top: 15vw;
+    
+    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #4340F3 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.9;
+    z-index: 3;
+  }
+
+  .rect3 {
+    position: absolute;
+    width: 62.5vw;
+    height: 35.41vw;
+    left: 21.09vw;
+    top: 8.75vw;
+    
+    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #3531F5 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  .rect4 {
+    position: absolute;
+
+    width: 67.70vw;
+    height: 40.62vw;
+    left: 24.73vw;
+    top: 12.55vw;
+    
+    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #231FD6 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.9;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.freedomSectionWrapper {
+  .title {
+    position: absolute;
+    width: 68.54vw;
+    height: 16.04vw;
+    left: 27.23vw;
+    top: 17.13vw;
+    
+    font-family: 'Baumans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.77vw;
+    line-height: 118%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    color: #FFFFFF;    
+  }
+
+  .description {
+    position: absolute;
+    width: 20.72vw;
+    height: 28.54vw;
+    left: 74.01vw;
+    top: 47vw;
+    
+    font-family: 'Apple Chancery';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.66vw;
+    line-height: 112%;
+        
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    color: #4E4AFF;
+    -webkit-text-stroke: 0.02vw #FFFFFF;
+  }
+
+  .imageFreedomFrame {
+    position: absolute;
+    width: 89.27vw;
+    height: 61.71vw;
+    left: 5.36vw;
+    top: 100vw; 
+  }
+}

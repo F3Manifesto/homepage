@@ -20,6 +20,8 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 
 import styles from './styles.module.scss'
+import HowToSection from '@components/HowToSection'
+import FreedomSection from '@components/FreedomSection'
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -122,31 +124,10 @@ function Landing(props) {
             </div>  
           </section>
           <section className={styles.howtoSection} id='howto_section'>
-            <div className={styles.title}>
-              How to:
-            </div>
-            <ul>
-              <li>Make</li>
-              <li>Collect</li>
-              <li>Sell</li>
-              <li>Use</li>
-            </ul>
-            <div className={styles.description}>
-              multiple layers of different sized background divs with gradients ranging from transparent to close varieties of the full background blue. they shift in relation to each other, giving a shifting perspective impression
-            </div>
+            <HowToSection />
           </section>
           <section className={styles.freedomSection} id='freedom_section'>
-            <div className={styles.title}>
-              FREEDOM TO PLAY <br />
-              ENTER THE CC0 ARCADE
-            </div>
-            <div className={styles.description}>
-              It empowers and supports directly incentivised CC0. 
-              <br /><br />
-              The CC0 Arcade challenges you to get more from the time you spent wasted staring at glowing screens. 
-              <br /><br />
-              Now, each moment, each credit, each effort that you put in to the creative machines records, propagates and scales the full diverse extent and quality of content and culture that are not only free in spirit but interesting and interactive enough to keep you engaged in your own self sovereign journeys. 
-            </div>
+            <FreedomSection />
           </section>
           <section className={styles.cypherPunkSection} id='cypherpunk_section'>
             <img src='/images/homepage/zk_back.jpg' className={styles.zk_back} />

@@ -134,12 +134,14 @@
   }
 
   .howtoSection {
-    min-height: 60vw;
+    position: relative;
+    min-height: 62.18vw;
     background-color: $blue;
   }
 
   .freedomSection {
-    min-height: 150vw;
+    position: relative;
+    min-height: 180vw;
   }
 
   .cypherPunkSection {
