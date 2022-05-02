@@ -1,4 +1,5 @@
 import React from 'react'
+import YellowButton from '@components/YellowButton'
 import styles from './styles.module.scss'
 
 const CypherPunkSection = () => {
@@ -14,6 +15,12 @@ const CypherPunkSection = () => {
           <img src='/images/homepage/cypherpunk2.png' className={styles.image2} />
           <img src='/images/homepage/cypherpunk1.png' className={styles.image3} />
           <img src='/images/homepage/cypherpunk2.png' className={styles.image4} />
+          <YellowButton
+            link=''
+            className={styles.viewCollectionButton}
+          >
+            view the collection
+          </YellowButton>
         </div>  
         <div className={styles.description}>
           The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 

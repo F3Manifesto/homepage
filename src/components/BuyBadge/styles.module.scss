@@ -1,0 +1,39 @@
+.buyBadgeWrapper {
+  position: relative;
+  display: block;
+  width: 8.33vw;
+  height: 8.33vw;
+
+  transition: 0.3s all;
+
+  &:hover {
+    transition: 0.3s all;
+    transform: scale(1.1) !important;
+  }
+
+  .badgeImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 100%;
+
+    color: #000000;
+  }
+}

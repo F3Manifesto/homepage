@@ -51,19 +51,7 @@
         top: 37.34vw;
 
         mix-blend-mode: luminosity;
-        transform-origin: 0 0;
-        transform: rotate(-5deg);          
-      }
-
-      .initImage1 {
-        position: absolute;
-        width: 21.45vw;
-        height: 25.15vw;
-        left: 6.4vw;
-        top: 37.34vw;
-
-        mix-blend-mode: luminosity;
-        transform-origin: 0 0;
+        transform-origin: 50% 50%;
         transform: rotate(-5deg);          
       }
 
@@ -76,6 +64,7 @@
         top: 58.17vw;
 
         mix-blend-mode: luminosity;
+        
       }
 
       .initImage3 {
@@ -85,8 +74,8 @@
         left: 42.39vw;
         top: 35.88vw;
 
-        mix-blend-mode: luminosity;
-        transform-origin: 0 0;
+        // mix-blend-mode: luminosity;
+        transform-origin: 50% 50%;
         transform: rotate(10deg);
       }
 
@@ -97,9 +86,32 @@
         left: 45.88vw;
         top: 70.46vw;
 
-        mix-blend-mode: luminosity;
-        transform-origin: 0 0;
+        transform-origin: 50% 50%;
         transform: rotate(-30deg);          
+      }
+
+      .badge1 {
+        position: absolute;
+        left: 23vw;
+        top: 34.4vw;
+      }
+
+      .badge2 {
+        position: absolute;
+        left: 60vw;
+        top: 33vw;
+      }
+
+      .badge3 {
+        position: absolute;
+        left: 40vw;
+        top: 56vw;
+      }
+
+      .badge4 {
+        position: absolute;
+        left: 64vw;
+        top: 61vw;
       }
     }
 
@@ -125,8 +137,8 @@
         left: 50%;
         bottom: 0;
         top: calc(60px + 11vw);
-        width: 1px;
-        background-color: #000000;
+        width: 0.156vw;
+        background-color: $blue;
       }
     }
 

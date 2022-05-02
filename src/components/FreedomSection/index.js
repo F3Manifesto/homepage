@@ -1,12 +1,19 @@
 import React from 'react'
+import BlueButton from '@components/BlueButton'
 import styles from './styles.module.scss'
 
 const FreedomSection = () => {
   return (
     <div className={styles.freedomSectionWrapper}>
+      <div className={styles.line1}></div>
+
       <div className={styles.rect1}></div>
       <div className={styles.rect2}></div>
       <div className={styles.rect3}></div>
+      <img
+        className={styles.freedom3DImage}
+        src='/images/homepage/freedom_3d.png'
+      />
 
       <div className={styles.title}>
         FREEDOM TO PLAY <br />
@@ -27,15 +34,40 @@ const FreedomSection = () => {
         className={styles.imageFreedomFrame}
         src='/images/homepage/freedom_frame.png'
       />
+      <img
+        className={styles.mouseImage}
+        src='/images/homepage/mouse.png'
+      />
 
       <div className={styles.circle1}>
-        <div className={styles.innerCircle}></div>
+        <div className={styles.innerCircle}>
+          blinaut
+        </div>
+        <div className={styles.subText}>
+          arcane runes
+        </div>
       </div>
       <div className={styles.circle2}>
-        <div className={styles.innerCircle}></div>
+        <div className={styles.innerCircle}>
+          <img
+            src='/images/homepage/influence.png'
+            className={styles.imageInfluence}
+          />
+        </div>
+        <div className={styles.text}>
+          noun
+        </div>
+        <div className={styles.subText}>
+          blank
+        </div>
       </div>
       <div className={styles.circle3}>
-        <div className={styles.innerCircle}></div>
+        <div className={styles.innerCircle}>
+          game
+        </div>
+        <div className={styles.subText}>
+          geometric shapes
+        </div>
       </div>
 
       <div className={styles.text1}>
@@ -65,21 +97,37 @@ const FreedomSection = () => {
         From text to textiles, from stores to stories— every week we take a confidential behind the scenes look chronicling diverse experiences and accounts of some of the most pivotal, impactful and transformative narratives that make up the real fabric of fashion.
       </div>
 
-      <button className={[styles.button, styles.buttonView].join(' ')}>
+      <BlueButton
+        className={styles.buttonView}
+        link=''
+      >
+
         View
-      </button>
-      <button className={[styles.button, styles.buttonSubscribe].join(' ')}>
+      </BlueButton>
+      <BlueButton
+        className={styles.buttonSubscribe}
+        link=''
+      >
         Subscribe
-      </button>
-      <button className={[styles.button, styles.buttonLibrary].join(' ')}>
+      </BlueButton>
+      <BlueButton
+        className={styles.buttonLibrary}
+        link=''
+      >
         Go to library
-      </button>
-      <button className={[styles.button, styles.buttonCreate].join(' ')}>
+      </BlueButton>
+      <BlueButton
+        className={styles.buttonCreate}
+        link=''
+      >
         Create
-      </button>
-      <button className={[styles.button, styles.buttonRead].join(' ')}>
+      </BlueButton>
+      <BlueButton
+        className={styles.buttonRead}
+        link=''
+      >
         Read
-      </button>
+      </BlueButton>
     </div>
   )
 }

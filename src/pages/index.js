@@ -26,6 +26,7 @@ import CypherPunkSection from '@components/CypherPunkSection'
 import HyperUtilitySection from '@components/HyperUtilitySection'
 import GuideSection from '@components/GuideSection'
 import PatronSection from '@components/PatronSection'
+import BuyBadge from '@components/BuyBadge'
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -82,11 +83,15 @@ function Landing(props) {
       gsap.timeline()
         .from("#title", {y: -100})
         .from("#side_part", {x: 100})
-        .from("#init_image1", {scale: 0, transformOrigin: 'center center'})
-        .from("#init_image2", {scale: 0, transformOrigin: 'center center'})
-        .from("#init_image3", {scale: 0, transformOrigin: 'center center'})
-        .from("#init_image4", {scale: 0, transformOrigin: 'center center'})
-
+        .from("#init_image1", {scale: 0, transformOrigin: '50% 50%'})
+        .from("#badge1", {scale: 0, transformOrigin: 'center center'})
+        .from("#init_image3", {scale: 0, transformOrigin: '50% 50%'})
+        .from("#badge2", {scale: 0, transformOrigin: 'center center'})
+        .from("#init_image2", {scale: 0, transformOrigin: '50% 50%'})
+        .from("#badge3", {scale: 0, transformOrigin: 'center center'})
+        .from("#init_image4", {scale: 0, transformOrigin: '50% 50%'})
+        .from("#badge4", {scale: 0, transformOrigin: 'center center'})
+        
       gsap.timeline({defaults: {duration: 1},
         scrollTrigger: {
           trigger: `#side_part`,
@@ -117,9 +122,34 @@ function Landing(props) {
               </div>
 
               <img src='/images/homepage/init_image1.png' className={styles.initImage1} id='init_image1' />
-              <img src='/images/homepage/init_image2.png' className={styles.initImage2} id='init_image2' />
               <img src='/images/homepage/init_image3.png' className={styles.initImage3} id='init_image3' />
+              <img src='/images/homepage/init_image2.png' className={styles.initImage2} id='init_image2' />
               <img src='/images/homepage/init_image4.png' className={styles.initImage4} id='init_image4' />
+              
+              <BuyBadge 
+                className={styles.badge1}
+                id={'badge1'}
+                link={''}
+                label={'BUY PHYSICAL'}
+              />
+              <BuyBadge 
+                className={styles.badge2}
+                id={'badge2'}
+                link={''}
+                label={'BUY DIGITAL'}
+              />
+              <BuyBadge 
+                className={styles.badge3}
+                id={'badge3'}
+                link={''}
+                label={'CYPHER KEY AUCTIONS'}
+              />
+              <BuyBadge 
+                className={styles.badge4}
+                id={'badge4'}
+                link={''}
+                label={'READ MANIFESTO'}
+              />
 
             </div>
             <div className={styles.sidePart} id='side_part'>

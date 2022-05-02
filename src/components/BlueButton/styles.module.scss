@@ -1,0 +1,31 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.blueButtonWrapper {
+  position: absolute;
+  display: block;
+  background: $blue;
+  min-width: 8.64vw;
+  height: 2.18vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+
+  font-family: 'LEMON MILK';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.94vw;
+  line-height: 133%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  transition: 0.3s all;
+  &:hover {
+    transition: 0.3s all;
+    transform-origin: 50% 50%;
+    transform: scale(1.1);
+  }
+}

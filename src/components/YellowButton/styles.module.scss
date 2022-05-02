@@ -1,0 +1,33 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.yellowButtonWrapper {
+  position: absolute;
+  display: block;
+  background: #f6d61e;
+  min-width: 8.64vw;
+  height: 2.18vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 1);
+
+  font-family: 'LEMON MILK';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 133%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: black;
+
+  transition: 0.3s all;
+  &:hover {
+    transition: 0.3s all;
+    transform: translate(1px, 1px);
+    box-shadow: 0 0 0 0;
+  }
+}
