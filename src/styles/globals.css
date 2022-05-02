@@ -535,3 +535,20 @@ button:focus {
   }
 }
 
+.swiper-container {
+  height: 29.53vw;
+}
+
+.swiper-slide {
+  transition: 0.75s ease;
+}
+
+.slider--even {
+  transform: translate3d(0,2vw,0);
+}
+
+.slider--odd
+{
+
+}
+
