@@ -27,6 +27,7 @@ import HyperUtilitySection from '@components/HyperUtilitySection'
 import GuideSection from '@components/GuideSection'
 import PatronSection from '@components/PatronSection'
 import BuyBadge from '@components/BuyBadge'
+import QRCodeBounce from '@components/QRCodeBounce'
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window
@@ -184,6 +185,25 @@ function Landing(props) {
               <img src='/images/homepage/init_image3.png' className={styles.backImage} id='back_image3' />
               <img src='/images/homepage/init_image4.png' className={styles.backImage} id='back_image4' />
             </div>
+
+            <div className={styles.qrCodeGround}>
+              <QRCodeBounce />
+            </div>
+            {/* <div className={styles.qrCodeGround}>
+              <div className={[styles.qrCode, styles.qrCode2].join(' ')}>
+                <img src='/images/homepage/qrCode.png' className={styles.qrCodeImage} />
+              </div>
+            </div>
+            <div className={styles.qrCodeGround}>
+              <div className={[styles.qrCode, styles.qrCode3].join(' ')}>
+                <img src='/images/homepage/qrCode.png' className={styles.qrCodeImage} />
+              </div>
+            </div>
+            <div className={styles.qrCodeGround}>
+              <div className={[styles.qrCode, styles.qrCode4].join(' ')}>
+                <img src='/images/homepage/qrCode.png' className={styles.qrCodeImage} />
+              </div>
+            </div> */}
 
             <div className={styles.mainPart}>
               <h1 id='title'>
