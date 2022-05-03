@@ -1,0 +1,28 @@
+.achiveItemWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .year {
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    font-size: 0.8vw;
+    color: gray;
+  }
+
+  .title {
+    letter-spacing: 0.1vw;
+  }
+
+  .description {
+    color: gray;
+    font-size: 0.6vw;
+    text-transform: uppercase;
+    margin-left: 0.8vw;
+    letter-spacing: 0.1vw;
+  }
+}

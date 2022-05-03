@@ -7,6 +7,13 @@ const GuideSection = () => {
       <div className={styles.title}>
         Znarky's Poignant Guide to NFTs
       </div>
+
+      <a
+        link=''
+        className={styles.grokMoreButton}
+      >
+        GROK MORE
+      </a>
     </div>
   )
 }
