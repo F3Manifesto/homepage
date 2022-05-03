@@ -1,20 +1,6 @@
 @import '../assets/scss/helpers/variables.scss';
 @import '../assets/scss/helpers/grid.scss';
 
-$size: 12vw;
-
-@keyframes xMove1 {
-  100% {
-    transform: translateX( calc(100vw - #{$size}) );
-  }
-}
-
-@keyframes yMove1 {
-  100% {
-    transform: translateY( calc(100vw - #{$size}) );
-  }
-}
-
 .wrapper {
   min-height: 100vw;
   position: relative;
@@ -38,48 +24,6 @@ $size: 12vw;
       height: 100%;
       background-color: transparent;
       z-index: 1;
-
-      .qrCode1 {
-        
-        animation: xMove1 13s linear infinite alternate;
-
-        .qrCodeImage {
-          animation: yMove1 7s linear infinite alternate;
-
-          width: 12vw;
-          height: 12vw;
-        }
-        
-      }
-
-      .qrCode2 {
-        animation: xMove2 13s linear infinite alternate;
-
-        .qrCodeImage {
-          animation: yMove2 7s linear infinite alternate;
-
-          width: 12vw;
-          height: 12vw;
-        }
-      }
-
-      .qrCode2 {
-        position: absolute;
-        left: 0vw;
-        top: 0vw;
-      }
-
-      .qrCode3 {
-        position: absolute;
-        left: 30vw;
-        top: 35vw;
-      }
-
-      .qrCode4 {
-        position: absolute;
-        left: 30vw;
-        top: 35vw;
-      }
     }
 
     .mainPart {
