@@ -15,82 +15,51 @@ const GuideSection = () => {
       </div>
 
       <div className={styles.animationWrapper}>
-        <div className={styles.animationReverse}>
-          <div className={styles.marquee}>
-            <div className={styles.animationFrame}>
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={index} src={guideImages[index]} />
-                  )
-                })
-              }
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={guideImages.length + index} src={guideImages[index]} />
-                  )
-                })
-              }
-            </div>
-          </div>
-          <div className={styles.marquee}>
-            <div className={styles.animationFrame}>
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={index} src={guideImages[index]} />
-                  )
-                })
-              }
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={guideImages.length + index} src={guideImages[index]} />
-                  )
-                })
-              }
-            </div>
-          </div>
-        </div>
-        <div className={styles.animationReverse}>
-          <div className={styles.marquee}>
-            <div className={styles.animationFrame}>
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={index} src={guideImages[index]} />
-                  )
-                })
-              }
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={guideImages.length + index} src={guideImages[index]} />
-                  )
-                })
-              }
-            </div>
-          </div>
-          <div className={styles.marquee}>
-            <div className={styles.animationFrame}>
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={index} src={guideImages[index]} />
-                  )
-                })
-              }
-              {
-                guideImages.map((item, index) => {
-                  return (
-                    <img key={guideImages.length + index} src={guideImages[index]} />
-                  )
-                })
-              }
-            </div>
-          </div>
-        </div>
+        {
+          Array(3).fill().map((item, index) => {
+            return (
+              <div className={styles.animationReverse} key={`reverse-${index}`}>
+                <div className={styles.marquee}>
+                  <div className={styles.animationFrame}>
+                    {
+                      guideImages.map((item, index) => {
+                        return (
+                          <img key={index} src={guideImages[index]} />
+                        )
+                      })
+                    }
+                    {
+                      guideImages.map((item, index) => {
+                        return (
+                          <img key={guideImages.length + index} src={guideImages[index]} />
+                        )
+                      })
+                    }
+                  </div>
+                </div>
+                <div className={styles.marquee}>
+                  <div className={styles.animationFrame}>
+                    {
+                      guideImages.map((item, index) => {
+                        return (
+                          <img key={index} src={guideImages[index]} />
+                        )
+                      })
+                    }
+                    {
+                      guideImages.map((item, index) => {
+                        return (
+                          <img key={guideImages.length + index} src={guideImages[index]} />
+                        )
+                      })
+                    }
+                  </div>
+                </div>
+              </div>
+            )
+        
+          })
+        }
       </div>
 
       <a
