@@ -1,5 +1,7 @@
 
 .patronWrapper {
+  display: flex;
+
   .title {
     position: absolute;    
     width: 56.82vw;
@@ -19,11 +21,12 @@
   }
 
   .introWrapper {
-    position: absolute;
+    // position: absolute;
     width: 29.27vw;
     // height: 65.73vw;
-    left: 2.44vw;
-    top: 13.49vw;
+    margin-left: 2.44vw;
+    margin-top: 13.49vw;
+    margin-bottom: 6vw;
     padding: 1vw;
 
     color: #00229d;
@@ -55,7 +58,8 @@
     position: absolute;
     width: 62.5vw;
     left: 34vw;
-    top: 45vw;
+    bottom: 6vw;
+    // top: 45vw;
     color: #00229d;
   }
 }

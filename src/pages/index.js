@@ -83,14 +83,17 @@ function Landing(props) {
       gsap.timeline()
         .from("#title", {y: -100})
         .from("#side_part", {x: 100})
+        .from("#image_window", {scale: 0, transformOrigin: '50% 50%'})
         .from("#init_image1", {scale: 0, transformOrigin: '50% 50%'})
-        .from("#badge1", {scale: 0, transformOrigin: 'center center'})
         .from("#init_image3", {scale: 0, transformOrigin: '50% 50%'})
-        .from("#badge2", {scale: 0, transformOrigin: 'center center'})
         .from("#init_image2", {scale: 0, transformOrigin: '50% 50%'})
-        .from("#badge3", {scale: 0, transformOrigin: 'center center'})
         .from("#init_image4", {scale: 0, transformOrigin: '50% 50%'})
-        .from("#badge4", {scale: 0, transformOrigin: 'center center'})
+
+      gsap.timeline()
+        .from("#badge1", {scale: 0, transformOrigin: 'center center'})
+        .from("#badge2", {scale: 0, transformOrigin: 'center center'})
+        .from("#badge3", {scale: 0, transformOrigin: 'center center'})
+        .from("#badge4", {scale: 0, transformOrigin: 'center center'})  
         
       gsap.timeline({defaults: {duration: 1},
         scrollTrigger: {
@@ -101,6 +104,69 @@ function Landing(props) {
         }
       })
       .to("#side_part", {yPercent: 90, duration: 1})
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".initSection",
+          start: "top 20%",
+          end: "20% 100%",
+          scrub: 1,
+          onEnter: () => {
+            gsap.to("#back_image1", { opacity: 1, duration: 0.5 })
+          },
+          onLeaveBack: () => {
+            gsap.to("#back_image1", { opacity: 0, duration: 0.5 })
+          },
+        }
+      })
+      // .fromTo("#back_image1", { y: 500, opacity: 0 }, { y: 0, opacity: 1 }, 0)
+      
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".initSection",
+          start: "20% top",
+          end: "40% 100%",
+          scrub: 1,
+          onEnter: () => {
+            gsap.to("#back_image2", { opacity: 1, duration: 0.5 })
+          },
+          onLeaveBack: () => {
+            gsap.to("#back_image2", { opacity: 0, duration: 0.5 })
+          },
+        }
+      })
+      // .fromTo("#back_image2", { y: 500, opacity: 0 }, { y: 0, opacity: 1 }, 0)
+      
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".initSection",
+          start: "40% top",
+          end: "60% 100%",
+          scrub: 1,
+          onEnter: () => {
+            gsap.to("#back_image3", { opacity: 1, duration: 0.5 })
+          },
+          onLeaveBack: () => {
+            gsap.to("#back_image3", { opacity: 0, duration: 0.5 })
+          },
+        }
+      })
+      
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".initSection",
+          start: "60% top",
+          end: "80% 100%",
+          scrub: 1,
+          onEnter: () => {
+            gsap.to("#back_image4", { opacity: 1, duration: 0.5 })
+          },
+          onLeaveBack: () => {
+            gsap.to("#back_image4", { opacity: 0, duration: 0.5 })
+          },
+        }
+      })
+      // .fromTo("#back_image3", { y: 500, opacity: 0 }, { y: 0, opacity: 1 }, 0)
     }
   }, []);
 
@@ -112,15 +178,19 @@ function Landing(props) {
       (
         <div className={styles.wrapper}>
           <section className={styles.initSection} id='init_section'>
+            <div className={styles.imageWindow} id='image_window'>
+              <img src='/images/homepage/init_image1.png' className={[styles.backImage, styles.show].join(' ')} id='back_image1' />
+              <img src='/images/homepage/init_image2.png' className={styles.backImage} id='back_image2' />
+              <img src='/images/homepage/init_image3.png' className={styles.backImage} id='back_image3' />
+              <img src='/images/homepage/init_image4.png' className={styles.backImage} id='back_image4' />
+            </div>
+
             <div className={styles.mainPart}>
               <h1 id='title'>
                 F<sub>3</sub>Manifesto
               </h1>
 
-              <div className={styles.imageWindow} id='image_window'>
-
-              </div>
-
+              
               <img src='/images/homepage/init_image1.png' className={styles.initImage1} id='init_image1' />
               <img src='/images/homepage/init_image3.png' className={styles.initImage3} id='init_image3' />
               <img src='/images/homepage/init_image2.png' className={styles.initImage2} id='init_image2' />
@@ -179,23 +249,6 @@ function Landing(props) {
           </section>
         </div>
       )
-      // : (
-      //   <div className={styles.mobileWrapper}>
-      //     <section className={styles.initSection}>
-      //       <div className={styles.mainPart}>
-      //         <h1>
-      //           F<sub>3</sub>Manifesto
-      //         </h1>
-      //       </div>
-      //       <div className={styles.sidePart}>
-      //         <div className={styles.learnMoreText}>
-      //           Learn More
-      //         </div>
-      //         <div className={styles.line}></div>
-      //       </div>
-      //     </section>
-      //   </div>
-      // )
       }
     </>
   )
