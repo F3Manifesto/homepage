@@ -25,7 +25,23 @@ const PatronSection = () => {
         </div>
 
         <div className={styles.achieveItems}>
-          <AchieveItem 
+          
+            <AchieveItem
+              title='TIER ONE'
+            >
+              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+            </AchieveItem>
+            <AchieveItem
+              title='TIER TWO'
+            >
+              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+            </AchieveItem>
+            <AchieveItem
+              title='TIER THREE'
+            >
+              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+            </AchieveItem>
+          {/* <AchieveItem 
             title='Benjamin Righetti'
           >
             FWA FOTD <br />
@@ -128,7 +144,7 @@ const PatronSection = () => {
             AWWWARDS MOBILE EXCELLENCE <br />
             SITE INSPIRE <br />
             CSSDA WOTD <br />
-          </AchieveItem>
+          </AchieveItem> */}
         </div>
 
         <div className={styles.introDesc2}>
