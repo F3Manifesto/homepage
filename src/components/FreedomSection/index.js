@@ -26,10 +26,15 @@ const FreedomSection = () => {
         <br /><br />
         Now, each moment, each credit, each effort that you put in to the creative machines records, propagates and scales the full diverse extent and quality of content and culture that are not only free in spirit but interesting and interactive enough to keep you engaged in your own self sovereign journeys. 
       </div>
-      <img
-        className={styles.imageInsert}
-        src='/images/homepage/insertCC0.png'
-      />
+      <a
+        href=''
+        target='_blank'
+      >
+        <img
+          className={styles.imageInsert}
+          src='/images/homepage/insertCC0.png'
+        />
+      </a>
       <img
         className={styles.imageFreedomFrame}
         src='/images/homepage/freedom_frame.png'
@@ -39,15 +44,23 @@ const FreedomSection = () => {
         src='/images/homepage/mouse.png'
       />
 
-      <div className={styles.circle1}>
+      <a
+        className={styles.circle1}
+        href=''
+        target='_blank'
+      >
         <div className={styles.innerCircle}>
           blinaut
         </div>
         <div className={styles.subText}>
           arcane runes
         </div>
-      </div>
-      <div className={styles.circle2}>
+      </a>
+      <a
+        className={styles.circle2}
+        href=''
+        target='_blank'
+      >
         <div className={styles.innerCircle}>
           <img
             src='/images/homepage/influence.png'
@@ -60,15 +73,19 @@ const FreedomSection = () => {
         <div className={styles.subText}>
           blank
         </div>
-      </div>
-      <div className={styles.circle3}>
+      </a>
+      <a
+        className={styles.circle3}
+        href=''
+        target='_blank'
+      >
         <div className={styles.innerCircle}>
           game
         </div>
         <div className={styles.subText}>
           geometric shapes
         </div>
-      </div>
+      </a>
 
       <div className={styles.text1}>
         The manifest

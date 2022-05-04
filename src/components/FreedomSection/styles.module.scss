@@ -85,6 +85,12 @@
     height: 15.15vw;
     left: 55.46vw;
     top: 74.94vw;
+
+    transition: 0.3s all;
+    &:hover {
+      transition: 0.3s all;
+      transform: scale(1.05);
+    }
   }
 
   .imageFreedomFrame {
@@ -132,6 +138,12 @@
     align-items: center;
     .innerCircle {
       padding-left: 2%;
+    }
+
+    transition: 0.3s all;
+    &:hover {
+      transition: 0.3s all;
+      transform: scale(1.05);
     }
   }
 
@@ -181,6 +193,13 @@
 
       color: #000000;
     }
+
+
+    transition: 0.3s all;
+    &:hover {
+      transition: 0.3s all;
+      transform: scale(1.05);
+    }
   }
 
   .circle3 {
@@ -199,6 +218,13 @@
 
     .innerCircle {
       justify-content: center;
+    }
+
+
+    transition: 0.3s all;
+    &:hover {
+      transition: 0.3s all;
+      transform: scale(1.05);
     }
   }
 
