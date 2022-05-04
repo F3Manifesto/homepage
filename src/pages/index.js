@@ -243,11 +243,16 @@ function Landing(props) {
 
             </div>
             <div className={styles.sidePart} id='side_part'>
-              <div className={styles.learnMoreText}>
+              <a
+                className={styles.learnMoreText}
+                href=''
+                target='_blank'
+              >
                 Learn More
-              </div>
+              </a>
               <div className={styles.line} id='line_arrow'></div>
-            </div>  
+            </div>
+            <div className={styles.arrowDown}></div>
           </section>
           <section className={styles.howtoSection} id='howto_section'>
             <HowToSection />

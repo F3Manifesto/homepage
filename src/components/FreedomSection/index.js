@@ -145,6 +145,7 @@ const FreedomSection = () => {
       >
         Read
       </BlueButton>
+      <div className={styles.arrowDown}></div>
     </div>
   )
 }

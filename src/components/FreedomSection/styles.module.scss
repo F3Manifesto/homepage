@@ -437,5 +437,18 @@
     left: 67.96vw;
     top: 157.5vw;
   }
+
+  .arrowDown {
+    position: absolute;
+    z-index: 4;
+    left: 16.7vw;
+    top: 99.04vw;
+    // width: 0; 
+    // height: 0; 
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+    
+    border-top: 1vw solid $blue;
+  }
   
 }

@@ -148,12 +148,20 @@
       bottom: 0;
 
       .learnMoreText {
+        display: block;
         margin-top: 50px;
         margin-left: calc(50% + 1.2vw);
         transform-origin: 0% 0%;
         transform: rotate(90deg);
         font-size: 2vw;
         width: 11vw;
+
+        transition: 0.3s all;
+        &:hover {
+          transition: 0.3s all;
+          color: $blue;
+          text-decoration: underline;
+        }
       }
 
       .line {
@@ -164,6 +172,19 @@
         width: 0.156vw;
         background-color: $blue;
       }
+    }
+
+    .arrowDown {
+      position: absolute;
+      z-index: 4;
+      right: 5.95vw;
+      bottom: 0;
+      // width: 0; 
+      // height: 0; 
+      border-left: 1vw solid transparent;
+      border-right: 1vw solid transparent;
+      
+      border-top: 1vw solid $blue;
     }
 
 
