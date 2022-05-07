@@ -150,11 +150,13 @@
       .learnMoreText {
         display: block;
         margin-top: 50px;
-        margin-left: calc(50% + 1.2vw);
+        margin-left: calc(50% + 2.3vw);
         transform-origin: 0% 0%;
         transform: rotate(90deg);
-        font-size: 2vw;
+        font-size: 4vw;
+        font-family: New York;
         width: 11vw;
+        color: #4E4AFF;
 
         transition: 0.3s all;
         &:hover {

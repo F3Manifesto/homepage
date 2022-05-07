@@ -2,9 +2,11 @@ import React from 'react'
 import styles from './styles.module.scss'
 
 const guideImages = [
-  '/images/homepage/guide/guide-1.jpg',
-  '/images/homepage/guide/guide-2.jpg',
-  '/images/homepage/guide/guide-3.jpg',
+  '/images/homepage/guide/guide-1.png',
+  '/images/homepage/guide/guide-2.png',
+  '/images/homepage/guide/guide-3.png',
+  '/images/homepage/guide/guide-4.png',
+  '/images/homepage/guide/guide-5.png'
 ]
 
 const GuideSection = () => {
@@ -63,7 +65,7 @@ const GuideSection = () => {
       </div>
 
       <a
-        link=''
+        href='https://docs.f3manifesto.xyz/znarkys-poignant-guide-to-nfts/znarky'
         className={styles.grokMoreButton}
       >
         GROK MORE

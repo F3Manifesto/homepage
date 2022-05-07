@@ -24,7 +24,7 @@ const HeaderTopLine = ({ buttonText }) => {
   return (
     <div className={styles.headerWrapper}>
       <Link href="/">
-        <img src="/images/logo.png" className={styles.logo} />
+        <img src="/images/logoBig.png" className={styles.logo} />
       </Link>
 
       <div className={cn(styles.links, isCollapse ? styles.expandedMenu : "")}>
@@ -35,50 +35,24 @@ const HeaderTopLine = ({ buttonText }) => {
           <div></div>
           <div></div>
           <div></div>
-          <img src="/images/icons/close-button.svg" />
+          <img src="/images/icons/close-button.svg"/>
         </button>
 
         <div className={styles.menuBar}>
-          <a
-            href="https://docs.f3manifesto.xyz/"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            DOCUMENTATION
+        <a href="https://market.f3manifesto.xyz/" className={styles.link} target="_blank" rel="noreferrer">
+            Digital Fashion Market
           </a>
-          <a
-            href="https://web3fashionmanifesto.f3manifesto.xyz/manifesto/1/"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Web3 Fashion manifesto
+          <a href="https://popup.f3manifesto.xyz" className={styles.link} target="_blank" rel="noreferrer">
+            IRL Fashion & Collectibles
           </a>
-
-          <a
-            href="https://mirror.xyz/f3manifesto.eth"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Sub-thread weekly
+          <a href="https://web3fashionmanifesto.xyz/manifesto/1/" className={styles.link} target="_blank" rel="noreferrer">
+            Web3 Fashion Manifesto
           </a>
-          <a
-            href="https://themanifest.f3manifesto.xyz/"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            young letters to a vc
+          <a href="https://themanifest.f3manifesto.xyz/" className={styles.link} target="_blank" rel="noreferrer">
+            The Manifest Gallery
           </a>
-          <a
-            href="https://web3cc0openlibrary.f3manifesto.xyz/"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Matic-Eth Bridge
+          <a href="https://mypocketempire.xyz/" className={styles.link} target="_blank" rel="noreferrer">
+            My Pocket Empire
           </a>
 
           <div className={styles.signBtn}>

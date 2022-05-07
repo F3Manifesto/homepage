@@ -70,13 +70,15 @@
     font-weight: 400;
     font-size: 1.66vw;
     line-height: 112%;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: #4E4AFF;
         
     display: flex;
     align-items: center;
     text-align: right;
     
     color: #4E4AFF;
-    -webkit-text-stroke: 0.02vw #FFFFFF;
+
   }
 
   .imageInsert {

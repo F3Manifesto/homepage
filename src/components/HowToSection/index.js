@@ -15,7 +15,7 @@ import {
 const categoryList = [
   'Make',
   'Collect',
-  'Sell',
+  'Distro',
   'Use'
 ]
 

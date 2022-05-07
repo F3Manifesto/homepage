@@ -27,6 +27,7 @@
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80px;
   
     @media screen and (max-width: 1000px) {
       width: 70px;
@@ -94,7 +95,7 @@
         padding-top: 10px;
         white-space: nowrap;
         text-decoration-line: underline;
-        color: #FFFFFF;
+        color: #ffef62;
   
         &:hover {
           opacity: 0.8;
@@ -122,14 +123,14 @@
         width: fit-content;
 
         .signInButton {
-          color: white;
+          color: #ffef62;
           margin-left: 1rem;
           font-family: LEMON MILK;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
           line-height: 20px;
-          color: #FFFFFF;
+          color: #ffef62;
           padding: 10px 20px;
 
           &:hover {
@@ -157,8 +158,8 @@
       .menuButton {
         @include reset-button();
         @include active();
-        border: 1px solid #e6e6e6;
-        background-color: white;
+        border: 1px solid #ffef62;
+        background-color: #ffef62;
         border-radius: 0;
         box-shadow: none;
         padding: 10px 16px;

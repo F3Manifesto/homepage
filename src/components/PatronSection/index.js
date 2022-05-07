@@ -14,14 +14,13 @@ const PatronSection = () => {
 
       <div className={styles.introWrapper}>
         <div className={styles.introDesc}>
-          Hello, I'm Michael, a creative developer from South<br />
-          of France, currently working freelance. I am lucky<br />
-          enough to have learnt from and worked with the<br />
-          <a href='' target='_blank' >PAM</a> team. Here's some of my works.
+        Web3 Patron NFTs lets you buy directly into the heart of indie web3 fashion.<br /><br />
+        It is natively decentralised where anyone can purchase NFTs categorised across different tiers of access and utility.Specific and unique attributes for each Realm’s Patron NFTs will grow overtime and is outlined across the following pages. These attributes compound and evolve as this economy scales with the open metaverse.<br /><br />
+        As of now, the Patron Contribution NFTs are categorised across three tiers, with each tier offering different levels of access, utility and content unlockables, both native and specialised to this realm/label and also to the broader web3 fashion economy. <br />
         </div>
 
         <div className={styles.introTitle}>
-          MADE WITH LOVE
+          PATRON TIERS
         </div>
 
         <div className={styles.achieveItems}>
@@ -29,17 +28,21 @@ const PatronSection = () => {
             <AchieveItem
               title='TIER ONE'
             >
-              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+              Early and Whitelisted Access to New Drip and Collections (2 Collections Per Year). Map 2 the Metaverse Location Based Common NFT Collectibles. Everyday Patchwork Common Chronicle Mints. Common Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
+
+
+
             </AchieveItem>
             <AchieveItem
               title='TIER TWO'
             >
-              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+              Early and Whitelisted Access to New Drip and Collections (4 Collections Per Year). Map 2 the Metaverse Location Based Semi-Rare NFT Collectibles. Everyday Patchwork Semi-Rare Chronicle Mints. Semi-Rare Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
+
             </AchieveItem>
             <AchieveItem
               title='TIER THREE'
             >
-              The visual keys that secure and surround us, and every channel through which information passes, are inherent and given their greatest expression in every NFT truly encapsulating the open value of creative free expression. 
+Early and Whitelisted Access to New Drip and Collections (All Pieces Brought Forth). Map 2 the Metaverse Location Based Exclusive NFT Collectibles. Everyday Patchwork Exclusive Chronicle Mints. Exclusive Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
             </AchieveItem>
           {/* <AchieveItem 
             title='Benjamin Righetti'
@@ -148,9 +151,9 @@ const PatronSection = () => {
         </div>
 
         <div className={styles.introDesc2}>
-          I'm also doing live midi / WebGI vjing for an <br />
-          awesome band called <a href='' target='_blank'>Rachell</a>. I'm available for
-          freelance. Feel free to contact me !
+        Giving voice to a kind of cryptographic language 
+        creating portal hopping pathways between the metaverse 
+        and the streets.<br />
         </div>
       </div>
 

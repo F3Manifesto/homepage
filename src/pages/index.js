@@ -180,9 +180,9 @@ function Landing(props) {
         <div className={styles.wrapper}>
           <section className={styles.initSection} id='init_section'>
             <div className={styles.imageWindow} id='image_window'>
-              <img src='/images/homepage/init_image1.png' className={[styles.backImage, styles.show].join(' ')} id='back_image1' />
-              <img src='/images/homepage/init_image2.png' className={styles.backImage} id='back_image2' />
-              <img src='/images/homepage/init_image3.png' className={styles.backImage} id='back_image3' />
+              <img src='/images/homepage/product36.png' className={[styles.backImage, styles.show].join(' ')} id='back_image1' />
+              <img src='/images/homepage/cypher1.png' className={styles.backImage} id='back_image2' />
+              <img src='/images/homepage/cypher1.png' className={styles.backImage} id='back_image3' />
               <img src='/images/homepage/init_image4.png' className={styles.backImage} id='back_image4' />
             </div>
 
@@ -211,33 +211,33 @@ function Landing(props) {
               </h1>
 
               
-              <img src='/images/homepage/init_image1.png' className={styles.initImage1} id='init_image1' />
-              <img src='/images/homepage/init_image3.png' className={styles.initImage3} id='init_image3' />
-              <img src='/images/homepage/init_image2.png' className={styles.initImage2} id='init_image2' />
+              <img src='/images/homepage/product36.png' className={styles.initImage1} id='init_image1' />
+              <img src='/images/homepage/cypher1.png' className={styles.initImage3} id='init_image3' />
+              <img src='/images/homepage/cypher1.png' className={styles.initImage2} id='init_image2' />
               <img src='/images/homepage/init_image4.png' className={styles.initImage4} id='init_image4' />
               
               <BuyBadge 
                 className={styles.badge1}
                 id={'badge1'}
-                link={''}
+                link={'https://popup.f3manifesto.xyz/'}
                 label={'BUY PHYSICAL'}
               />
               <BuyBadge 
                 className={styles.badge2}
                 id={'badge2'}
-                link={''}
+                link={'https://market.f3manifesto.xyz/'}
                 label={'BUY DIGITAL'}
               />
               <BuyBadge 
                 className={styles.badge3}
                 id={'badge3'}
-                link={''}
+                link={'https://auctions.f3manifesto.xyz/'}
                 label={'CYPHER KEY AUCTIONS'}
               />
               <BuyBadge 
                 className={styles.badge4}
                 id={'badge4'}
-                link={''}
+                link={'https://web3fashion.f3manifesto.xyz/'}
                 label={'READ MANIFESTO'}
               />
 
@@ -248,7 +248,7 @@ function Landing(props) {
                 href=''
                 target='_blank'
               >
-                Learn More
+                NFT
               </a>
               <div className={styles.line} id='line_arrow'></div>
             </div>

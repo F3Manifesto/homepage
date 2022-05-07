@@ -28,7 +28,7 @@ const CypherPunkSection = () => {
           Advanced technologies through cryptography, ZK Proofs and ideographic keys operate almost like magic to the untrained eye. They give us enhancements, armaments and power far beyond our undressed origins. 
           <br /><br />
           All upcoming navigators of this neo-arcane age, alternates between fumbling and moving quick through all the same challenges as the rest of us, if we count ourselves among the hungry, humble and insatiably curious.
-          <br />
+          <br /><br />
           Cryptographic cyphers and proofs embedded within ideographic keys will be interwoven between the cypherpunk collection series and released in an asymmetry of both public and private mediums, auctions and digital and IRL settings. 
           <br /><br />
           Meet all of the navigators as their stories are spun on the loom. 

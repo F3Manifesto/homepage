@@ -27,7 +27,7 @@ const FreedomSection = () => {
         Now, each moment, each credit, each effort that you put in to the creative machines records, propagates and scales the full diverse extent and quality of content and culture that are not only free in spirit but interesting and interactive enough to keep you engaged in your own self sovereign journeys. 
       </div>
       <a
-        href=''
+        href='https://market.f3manifesto.xyz/product/54/2/0/'
         target='_blank'
       >
         <img
@@ -46,45 +46,27 @@ const FreedomSection = () => {
 
       <a
         className={styles.circle1}
-        href=''
+        href='https://www.mypocketempire.xyz/'
         target='_blank'
       >
-        <div className={styles.innerCircle}>
-          blinaut
-        </div>
-        <div className={styles.subText}>
-          arcane runes
-        </div>
       </a>
       <a
         className={styles.circle2}
-        href=''
+        href='https://docs.f3manifesto.xyz/axioms-and-creed/cc0-and-ip-freedom'
         target='_blank'
       >
         <div className={styles.innerCircle}>
           <img
-            src='/images/homepage/influence.png'
+            src='/images/homepage/rightclicksave.png'
             className={styles.imageInfluence}
           />
-        </div>
-        <div className={styles.text}>
-          noun
-        </div>
-        <div className={styles.subText}>
-          blank
         </div>
       </a>
       <a
         className={styles.circle3}
-        href=''
+        href='https://docs.f3manifesto.xyz/indie-film-series/the-sticky-uncut'
         target='_blank'
       >
-        <div className={styles.innerCircle}>
-          game
-        </div>
-        <div className={styles.subText}>
-          geometric shapes
-        </div>
       </a>
 
       <div className={styles.text1}>
@@ -94,13 +76,13 @@ const FreedomSection = () => {
         The Manifest is a curated gallery of the most direct ways to advance self sovereignty & the global decentralised fabrication renaissance through web3, cc0, NFTs, web3 fashion, DAOs, and the open metaverse. Personally hand selected by Emma-Jane MacKinnon-Lee.
       </div>
       <div className={styles.text3}>
-        Young letters to a vc
+        Letters to a young VC
       </div>
       <div className={styles.text4}>
         Web3 CC0 Open Library
       </div>
       <div className={styles.text5}>
-        Make derivatIVes
+        Make derivatives
         <br /><br />
         ---
       </div>
@@ -116,32 +98,32 @@ const FreedomSection = () => {
 
       <BlueButton
         className={styles.buttonView}
-        link=''
+        link='https://themanifest.f3manifesto.xyz/'
       >
 
         View
       </BlueButton>
       <BlueButton
         className={styles.buttonSubscribe}
-        link=''
+        link='https://mirror.xyz/f3manifesto.eth'
       >
         Subscribe
       </BlueButton>
       <BlueButton
         className={styles.buttonLibrary}
-        link=''
+        link='https://web3cc0openlibrary.f3manifesto.xyz/'
       >
         Go to library
       </BlueButton>
       <BlueButton
         className={styles.buttonCreate}
-        link=''
+        link='https://github.com/f3Manifesto/ccomaterials/ '
       >
         Create
       </BlueButton>
       <BlueButton
         className={styles.buttonRead}
-        link=''
+        link='https://mirror.xyz/f3manifesto.eth'
       >
         Read
       </BlueButton>
