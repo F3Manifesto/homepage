@@ -12,11 +12,10 @@ const CypherPunkSection = () => {
       <div className={styles.content}>
         <div className={styles.collection}>
           <img src='/images/homepage/zerorender.png' className={styles.image1} />
-          <img src='/images/homepage/cypherpunk2.png' className={styles.image2} />
+          <img src='/images/homepage/nim.png' className={styles.image2} />
           <img src='/images/homepage/cypherpunk1.png' className={styles.image3} />
-          <img src='/images/homepage/cypherpunk2.png' className={styles.image4} />
           <YellowButton
-            link=''
+            link='https://cypherkey.f3manifesto.xyz/'
             className={styles.viewCollectionButton}
           >
             view the collection

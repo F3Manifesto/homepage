@@ -9,12 +9,14 @@ import {
   makeProductList,
   collectProductList,
   sellProductList,
-  useProductList
+  useProductList,
+  wearProductList
 } from './data'
 
 const categoryList = [
   'Make',
   'Collect',
+  'Wear',
   'Distro',
   'Use'
 ]
@@ -31,6 +33,7 @@ const HowToSection = () => {
     if (currentCategory === 1) return collectProductList
     if (currentCategory === 2) return sellProductList
     if (currentCategory === 3) return useProductList
+    if (currentCategory === 4) return wearProductList
     return []
   }
 

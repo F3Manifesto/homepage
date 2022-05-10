@@ -10,10 +10,9 @@ const FreedomSection = () => {
       <div className={styles.rect1}></div>
       <div className={styles.rect2}></div>
       <div className={styles.rect3}></div>
-      <img
-        className={styles.freedom3DImage}
-        src='/images/homepage/freedom_3d.png'
-      />
+      <video className={styles.freedom3DImage} playsInline autoPlay muted loop>
+      <source src='public/video/cc0arc.mp4' type='video/mp4' />
+</video>
 
       <div className={styles.title}>
         FREEDOM TO PLAY <br />
@@ -46,27 +45,33 @@ const FreedomSection = () => {
 
       <a
         className={styles.circle1}
-        href='https://www.mypocketempire.xyz/'
+        href='https://docs.f3manifesto.xyz/indie-film-series/the-sticky-uncut'
         target='_blank'
       >
+                <img
+            src='/images/homepage/sticky.png'
+            className={styles.imageInfluence}
+          />
       </a>
       <a
         className={styles.circle2}
         href='https://docs.f3manifesto.xyz/axioms-and-creed/cc0-and-ip-freedom'
         target='_blank'
       >
-        <div className={styles.innerCircle}>
-          <img
-            src='/images/homepage/rightclicksave.png'
+         <img
+            src='/images/homepage/rightclick.png'
             className={styles.imageInfluence}
           />
-        </div>
       </a>
       <a
         className={styles.circle3}
-        href='https://docs.f3manifesto.xyz/indie-film-series/the-sticky-uncut'
+        href='https://www.mypocketempire.xyz/'
         target='_blank'
       >
+           <img
+            src='/images/homepage/mpe.png'
+            className={styles.imageInfluence}
+          />
       </a>
 
       <div className={styles.text1}>

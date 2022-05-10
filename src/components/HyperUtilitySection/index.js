@@ -17,16 +17,16 @@ const packs = [
     url: '/images/homepage/packs/pack4.png'
   },
   {
-    url: '/images/homepage/packs/pack1.png'
+    url: '/images/homepage/packs/pack5.png'
   },
   {
-    url: '/images/homepage/packs/pack2.png'
+    url: '/images/homepage/packs/pack6.png'
   },
   {
-    url: '/images/homepage/packs/pack3.png'
+    url: '/images/homepage/packs/pack7.png'
   },
   {
-    url: '/images/homepage/packs/pack3.png'
+    url: '/images/homepage/packs/pack8.png'
   }
 ]
 
@@ -38,7 +38,7 @@ const HyperUtilitySection = () => {
   return (
     <div className={styles.hyperUtilityWrapper}>
       <div className={styles.smallTitle}>
-        BIG BOLD TEXT SAYING; 
+        FOR PRACTICAL FASHION REVOLUTIONARIES
       </div>
       <div className={styles.title}>
         HYPERUTILITY PACKS

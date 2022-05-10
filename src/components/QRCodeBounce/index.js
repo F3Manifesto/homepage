@@ -7,10 +7,17 @@ const canvasHeight = 1000
 const photoSize = 100
 
 const qrCodeImages = [
-  './images/homepage/qrCode.png',
-  './images/homepage/qrCode.png',
-  './images/homepage/qrCode.png',
-  './images/homepage/qrCode.png',
+  './images/homepage/qrcode.png',
+  './images/homepage/qrcode1.png',
+  './images/homepage/qrcode2.png',
+  './images/homepage/qrcode3.png',
+  './images/homepage/qrcode4.png',
+  './images/homepage/qrcode5.png',
+  './images/homepage/qrcode6.png',
+  './images/homepage/qrcode7.png',
+  './images/homepage/qrcode8.png',
+  './images/homepage/qrcode9.png',
+  './images/homepage/qrcode10.png',
 ]
 
 const initPositions = [
@@ -18,6 +25,13 @@ const initPositions = [
   {x: 700, y: 200, dx: -1, dy: 1},
   {x: 300, y: 100, dx: -1, dy: -1},
   {x: 200, y: 650, dx: 1, dy: 1},
+  {x: 400, y: 200, dx: 1, dy: 1},
+  {x: 12, y: 450, dx: 1, dy: 1},
+  {x: 400, y: 200, dx: -1, dy: 1},
+  {x: 12, y: 450, dx: 1, dy: -1},
+  {x: 600, y: 50, dx: 1, dy: -1},
+  {x: 330, y: 330, dx: 1, dy: -1},
+  {x: 100, y: 100, dx: 1, dy: 1},
 ]
 
 const qrCode = {

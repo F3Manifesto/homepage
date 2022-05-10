@@ -211,10 +211,10 @@ function Landing(props) {
               </h1>
 
               
-              <img src='/images/homepage/product36.png' className={styles.initImage1} id='init_image1' />
-              <img src='/images/homepage/cypher1.png' className={styles.initImage3} id='init_image3' />
-              <img src='/images/homepage/cypher1.png' className={styles.initImage2} id='init_image2' />
-              <img src='/images/homepage/init_image4.png' className={styles.initImage4} id='init_image4' />
+              <img src='/images/homepage/1.png' className={styles.initImage1} id='init_image1' />
+              <img src='/images/homepage/2.png' className={styles.initImage3} id='init_image3' />
+              <img src='/images/homepage/3.png' className={styles.initImage2} id='init_image2' />
+              <img src='/images/homepage/4.png' className={styles.initImage4} id='init_image4' />
               
               <BuyBadge 
                 className={styles.badge1}
