@@ -18,7 +18,7 @@ const CypherPunkSection = () => {
             link='https://cypherkey.f3manifesto.xyz/'
             className={styles.viewCollectionButton}
           >
-            view the collection
+            Follow the Cypher Key Story
           </YellowButton>
         </div>  
         <div className={styles.description}>

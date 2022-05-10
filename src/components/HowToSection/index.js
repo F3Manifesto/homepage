@@ -8,9 +8,9 @@ import ProductItem from './ProductItem'
 import {
   makeProductList,
   collectProductList,
-  sellProductList,
+  wearProductList,
+  distroProductList,
   useProductList,
-  wearProductList
 } from './data'
 
 const categoryList = [
@@ -31,9 +31,9 @@ const HowToSection = () => {
   const getCurrentProductList = () => {
     if (currentCategory === 0) return makeProductList
     if (currentCategory === 1) return collectProductList
-    if (currentCategory === 2) return sellProductList
-    if (currentCategory === 3) return useProductList
-    if (currentCategory === 4) return wearProductList
+    if (currentCategory === 2) return wearProductList
+    if (currentCategory === 3) return distroProductList
+    if (currentCategory === 4) return useProductList
     return []
   }
 
@@ -101,6 +101,7 @@ const HowToSection = () => {
                 <SwiperSlide key={index}>
                   <ProductItem
                     image={item.image}
+                    video={item.video}
                     title={item.title}
                     seller={item.seller}
                   />
