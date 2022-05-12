@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react'
-import styles from './styles.module.scss'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation } from 'swiper'
+import React, { useState, useRef } from "react";
+import styles from "./styles.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
 
-import ProductItem from './ProductItem'
+import ProductItem from "./ProductItem";
 
 import {
   makeProductList,
@@ -11,34 +11,27 @@ import {
   wearProductList,
   distroProductList,
   useProductList,
-} from './data'
+} from "./data";
 
-const categoryList = [
-  'Make',
-  'Collect',
-  'Wear',
-  'Distro',
-  'Use'
-]
+const categoryList = ["Make", "Collect", "Wear", "Distro", "Use"];
 
-SwiperCore.use([Navigation])
+SwiperCore.use([Navigation]);
 
 const HowToSection = () => {
-  const [currentCategory, setCurrentCategory] = useState(0)
+  const [currentCategory, setCurrentCategory] = useState(2);
   // const swiper = useSwiper()
 
-
   const getCurrentProductList = () => {
-    if (currentCategory === 0) return makeProductList
-    if (currentCategory === 1) return collectProductList
-    if (currentCategory === 2) return wearProductList
-    if (currentCategory === 3) return distroProductList
-    if (currentCategory === 4) return useProductList
-    return []
-  }
+    if (currentCategory === 0) return makeProductList;
+    if (currentCategory === 1) return collectProductList;
+    if (currentCategory === 2) return wearProductList;
+    if (currentCategory === 3) return distroProductList;
+    if (currentCategory === 4) return useProductList;
+    return [];
+  };
 
-  const navigationPrevRef = useRef(null)
-  const navigationNextRef = useRef(null)
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
 
   // const gotoNextSlider = () => {
   //   swiper.slideNext()
@@ -52,19 +45,19 @@ const HowToSection = () => {
     <div className={styles.howToSectionWrapper}>
       <ul className={styles.category}>
         <li>How to:</li>
-        {
-          categoryList.map((item, index) => {
-            return (
-              <li
-
-                className={[styles.selectable, index === currentCategory ? styles.selected : ''].join(' ')}
-                onClick={() => setCurrentCategory(index)}
-              >
-                {item}
-              </li>
-            )
-          })
-        }
+        {categoryList.map((item, index) => {
+          return (
+            <li
+              className={[
+                styles.selectable,
+                index === currentCategory ? styles.selected : "",
+              ].join(" ")}
+              onClick={() => setCurrentCategory(index)}
+            >
+              {item}
+            </li>
+          );
+        })}
       </ul>
       <div className={styles.rect1}></div>
       <div className={styles.rect2}></div>
@@ -83,46 +76,51 @@ const HowToSection = () => {
             // Delay execution for the refs to be defined
             setTimeout(() => {
               // Override prevEl & nextEl now that refs are defined
-              swiper.params.navigation.prevEl = navigationPrevRef.current
-              swiper.params.navigation.nextEl = navigationNextRef.current
-    
+              swiper.params.navigation.prevEl = navigationPrevRef.current;
+              swiper.params.navigation.nextEl = navigationNextRef.current;
+
               // Re-init navigation
-              swiper.navigation.destroy()
-              swiper.navigation.init()
-              swiper.navigation.update()
-            })
+              swiper.navigation.destroy();
+              swiper.navigation.init();
+              swiper.navigation.update();
+            });
           }}
-          onSlideChange={() => console.log('slide change')}
+          onSlideChange={() => console.log("slide change")}
           // onSwiper={(swiper) => console.log(swiper)}
         >
-          {
-            getCurrentProductList().map((item, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProductItem
-                    image={item.image}
-                    video={item.video}
-                    title={item.title}
-                    seller={item.seller}
-                  />
-                </SwiperSlide>
-              )
-            })
-          }
+          {getCurrentProductList().map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ProductItem
+                  image={item.image}
+                  video={item.video}
+                  title={item.title}
+                  seller={item.seller}
+                  link={item.href}
+                />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
       <div className={styles.buttonWrapper}>
         <div className={styles.container}>
-          <button ref={navigationPrevRef} >
-            <img src='/images/homepage/backward-button.png' className={styles.backButton} />
+          <button ref={navigationPrevRef}>
+            <img
+              src="/images/homepage/backward-button.png"
+              className={styles.backButton}
+            />
           </button>
-          <button ref={navigationNextRef} >
-            <img src='/images/homepage/forward-button.png' className={styles.nextButton} />
+          <button ref={navigationNextRef}>
+            <img
+              src="/images/homepage/forward-button.png"
+              className={styles.nextButton}
+            />
           </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HowToSection
+export default HowToSection;
