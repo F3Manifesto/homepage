@@ -78,12 +78,16 @@ const QRCodeBounce = () => {
     .map(() => ({ ...qrCode }));
 
   const canvasRef = useRef();
+  const imagesRef = useRef([]);
   const raf = useRef();
 
   useEffect(() => {
     const photoImages = Array(qrCodeImages.length)
       .fill()
       .map(() => new Image(100, 100));
+    imagesRef.current = Array(qrCodeImages.length)
+      .fill()
+      .map(() => false);
 
     photoImages.map((item, index) => {
       photoImages[index].src = qrCodeImages[index];
@@ -98,8 +102,10 @@ const QRCodeBounce = () => {
       context.clearRect(0, 0, canvasObj.width, canvasObj.height);
 
       qrCodeList.forEach((item, index) => {
-        qrCodeList[index].draw(context, photoImages[index]);
-        qrCodeList[index].move(canvasObj.width, canvasObj.height);
+        if (imagesRef.current[index]) {
+          qrCodeList[index].draw(context, photoImages[index]);
+          qrCodeList[index].move(canvasObj.width, canvasObj.height);
+        }
       });
       raf.current = window.requestAnimationFrame(draw);
     }
@@ -107,12 +113,17 @@ const QRCodeBounce = () => {
     function init() {
       qrCodeList.forEach((item, index) => qrCodeList[index].init(index));
       window.cancelAnimationFrame(raf.current);
-      setTimeout(() => {
-        raf.current = window.requestAnimationFrame(draw);
-      }, [1000]);
+      raf.current = window.requestAnimationFrame(draw);
     }
 
-    if (context) init();
+    if (context) {
+      photoImages.map((image, index) => {
+        image.onload = function () {
+          imagesRef.current[index] = true;
+        };
+      });
+      init();
+    }
     return () => {
       window.cancelAnimationFrame(raf.current);
     };
