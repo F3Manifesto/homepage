@@ -86,7 +86,6 @@ const HowToSection = () => {
             });
           }}
           onSlideChange={() => console.log("slide change")}
-          // onSwiper={(swiper) => console.log(swiper)}
         >
           {getCurrentProductList().map((item, index) => {
             return (
