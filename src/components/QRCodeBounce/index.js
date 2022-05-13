@@ -7,17 +7,17 @@ const canvasHeight = 1000;
 const photoSize = 100;
 
 const qrCodeImages = [
-  "./images/homepage/qrcode.png",
-  "./images/homepage/qrcode1.png",
-  "./images/homepage/qrcode2.png",
-  "./images/homepage/qrcode3.png",
-  "./images/homepage/qrcode4.png",
-  "./images/homepage/qrcode5.png",
-  "./images/homepage/qrcode6.png",
-  "./images/homepage/qrcode7.png",
-  "./images/homepage/qrcode8.png",
-  "./images/homepage/qrcode9.png",
-  "./images/homepage/qrcode10.png",
+  "/images/homepage/qrcode.png",
+  "/images/homepage/qrcode1.png",
+  "/images/homepage/qrcode2.png",
+  "/images/homepage/qrcode3.png",
+  "/images/homepage/qrcode4.png",
+  "/images/homepage/qrcode5.png",
+  "/images/homepage/qrcode6.png",
+  "/images/homepage/qrcode7.png",
+  "/images/homepage/qrcode8.png",
+  "/images/homepage/qrcode9.png",
+  "/images/homepage/qrcode10.png",
 ];
 
 const initPositions = [
