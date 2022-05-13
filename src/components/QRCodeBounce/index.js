@@ -107,7 +107,9 @@ const QRCodeBounce = () => {
     function init() {
       qrCodeList.forEach((item, index) => qrCodeList[index].init(index));
       window.cancelAnimationFrame(raf.current);
-      raf.current = window.requestAnimationFrame(draw);
+      setTimeout(() => {
+        raf.current = window.requestAnimationFrame(draw);
+      }, [1000]);
     }
 
     if (context) init();
