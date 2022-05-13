@@ -2,20 +2,22 @@
 import React, { memo, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 
+const canvasWidth = 1000;
+const canvasHeight = 1000;
 const photoSize = 100;
 
 const qrCodeImages = [
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
-  "/video/dez.mp4",
+  "./images/homepage/qrcode.png",
+  "./images/homepage/qrcode1.png",
+  "./images/homepage/qrcode2.png",
+  "./images/homepage/qrcode3.png",
+  "./images/homepage/qrcode4.png",
+  "./images/homepage/qrcode5.png",
+  "./images/homepage/qrcode6.png",
+  "./images/homepage/qrcode7.png",
+  "./images/homepage/qrcode8.png",
+  "./images/homepage/qrcode9.png",
+  "./images/homepage/qrcode10.png",
 ];
 
 const initPositions = [
@@ -41,28 +43,25 @@ const qrCode = {
   vx: 1.5,
   vy: 1,
 
-  init(image, number) {
+  init(number) {
     this.x = initPositions[number].x;
     this.y = initPositions[number].y;
     this.dx = initPositions[number].dx;
     this.dy = initPositions[number].dy;
-    const board = document.getElementById("drawboard");
-    image.style.top = this.x;
-    image.style.left = this.y;
-    image.style.position = "absolute";
-    board.appendChild(image);
     this.index = number;
   },
-  draw(photoImg) {
+  draw(ctx, photoImg) {
     if (photoImg) {
-      photoImg.style.top = `${this.x}px`;
-      photoImg.style.left = `${this.y}px`;
+      // console.log('photoImg: '.)
+      ctx.drawImage(photoImg, this.x, this.y, photoSize, photoSize);
+      ctx.da;
     }
   },
 
   move(width, height) {
     this.x += this.vx * this.dx;
     this.y += this.vy * this.dy;
+
     if (this.x <= 0 || this.x + photoSize >= width) {
       this.dx *= -1;
     }
@@ -78,34 +77,40 @@ const QRCodeBounce = () => {
     .fill()
     .map(() => ({ ...qrCode }));
 
+  const canvasRef = useRef();
   const raf = useRef();
-  const boradRef = useRef();
 
   useEffect(() => {
     const photoImages = Array(qrCodeImages.length)
       .fill()
-      .map((item, index) => document.getElementById(`video-${index}`));
+      .map(() => new Image(100, 100));
+
+    photoImages.map((item, index) => {
+      photoImages[index].src = qrCodeImages[index];
+    });
+
+    console.log("photoImages: ", photoImages);
+
+    const canvasObj = canvasRef.current;
+    const context = canvasObj ? canvasObj.getContext("2d") : null;
 
     function draw() {
+      context.clearRect(0, 0, canvasObj.width, canvasObj.height);
+
       qrCodeList.forEach((item, index) => {
-        qrCodeList[index].draw(photoImages[index]);
-        qrCodeList[index].move(
-          boradRef.current.clientWidth,
-          boradRef.current.clientHeight
-        );
+        qrCodeList[index].draw(context, photoImages[index]);
+        qrCodeList[index].move(canvasObj.width, canvasObj.height);
       });
       raf.current = window.requestAnimationFrame(draw);
     }
 
     function init() {
-      qrCodeList.forEach((item, index) =>
-        qrCodeList[index].init(photoImages[index], index)
-      );
+      qrCodeList.forEach((item, index) => qrCodeList[index].init(index));
       window.cancelAnimationFrame(raf.current);
       raf.current = window.requestAnimationFrame(draw);
     }
 
-    init();
+    if (context) init();
     return () => {
       window.cancelAnimationFrame(raf.current);
     };
@@ -113,19 +118,7 @@ const QRCodeBounce = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div id="drawboard" ref={boradRef} className={styles.innerWrapper}>
-        {qrCodeImages.map((video, index) => (
-          <video
-            autoPlay
-            loop
-            muted
-            id={`video-${index}`}
-            className={styles.video}
-          >
-            <source src={video} type="video/mp4" />
-          </video>
-        ))}
-      </div>
+      <canvas width={canvasWidth} height={canvasHeight} ref={canvasRef} />
     </div>
   );
 };

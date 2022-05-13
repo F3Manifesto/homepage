@@ -1,49 +1,54 @@
-import React from 'react'
-import AchieveItem from './AchieveItem'
-import AvatarPalette from './AvatarPalette'
-import styles from './styles.module.scss'
+import React from "react";
+import AchieveItem from "./AchieveItem";
+import AvatarPalette from "./AvatarPalette";
+import styles from "./styles.module.scss";
 
 const PatronSection = () => {
   return (
     <div className={styles.patronWrapper}>
-      <div className={styles.title}>
-        BECOME A PATRON <br />
-        &<br />
-        JOIN THE DAO
-      </div>
-
       <div className={styles.introWrapper}>
         <div className={styles.introDesc}>
-        Web3 Patron NFTs lets you buy directly into the heart of indie web3 fashion.<br /><br />
-        It is natively decentralised where anyone can purchase NFTs categorised across different tiers of access and utility.Specific and unique attributes for each Realm’s Patron NFTs will grow overtime and is outlined across the following pages. These attributes compound and evolve as this economy scales with the open metaverse.<br /><br />
-        As of now, the Patron Contribution NFTs are categorised across three tiers, with each tier offering different levels of access, utility and content unlockables, both native and specialised to this realm/label and also to the broader web3 fashion economy. <br />
+          Web3 Patron NFTs lets you buy directly into the heart of indie web3
+          fashion.
+          <br />
+          <br />
+          It is natively decentralised where anyone can purchase NFTs
+          categorised across different tiers of access and utility.Specific and
+          unique attributes for each Realm’s Patron NFTs will grow overtime and
+          is outlined across the following pages. These attributes compound and
+          evolve as this economy scales with the open metaverse.
+          <br />
+          <br />
+          As of now, the Patron Contribution NFTs are categorised across three
+          tiers, with each tier offering different levels of access, utility and
+          content unlockables, both native and specialised to this realm/label
+          and also to the broader web3 fashion economy. <br />
         </div>
 
-        <div className={styles.introTitle}>
-          PATRON TIERS
-        </div>
+        <div className={styles.introTitle}>PATRON TIERS</div>
 
         <div className={styles.achieveItems}>
-          
-            <AchieveItem
-              title='TIER ONE'
-            >
-              Early and Whitelisted Access to New Drip and Collections (2 Collections Per Year). Map 2 the Metaverse Location Based Common NFT Collectibles. Everyday Patchwork Common Chronicle Mints. Common Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
-
-
-
-            </AchieveItem>
-            <AchieveItem
-              title='TIER TWO'
-            >
-              Early and Whitelisted Access to New Drip and Collections (4 Collections Per Year). Map 2 the Metaverse Location Based Semi-Rare NFT Collectibles. Everyday Patchwork Semi-Rare Chronicle Mints. Semi-Rare Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
-
-            </AchieveItem>
-            <AchieveItem
-              title='TIER THREE'
-            >
-Early and Whitelisted Access to New Drip and Collections (All Pieces Brought Forth). Map 2 the Metaverse Location Based Exclusive NFT Collectibles. Everyday Patchwork Exclusive Chronicle Mints. Exclusive Access to the Distributed Network of Fashion Galleries for On-Site Minting and Other Unique Experiences.
-            </AchieveItem>
+          <AchieveItem title="TIER ONE">
+            Early and Whitelisted Access to New Drip and Collections (2
+            Collections Per Year). Map 2 the Metaverse Location Based Common NFT
+            Collectibles. Everyday Patchwork Common Chronicle Mints. Common
+            Access to the Distributed Network of Fashion Galleries for On-Site
+            Minting and Other Unique Experiences.
+          </AchieveItem>
+          <AchieveItem title="TIER TWO">
+            Early and Whitelisted Access to New Drip and Collections (4
+            Collections Per Year). Map 2 the Metaverse Location Based Semi-Rare
+            NFT Collectibles. Everyday Patchwork Semi-Rare Chronicle Mints.
+            Semi-Rare Access to the Distributed Network of Fashion Galleries for
+            On-Site Minting and Other Unique Experiences.
+          </AchieveItem>
+          <AchieveItem title="TIER THREE">
+            Early and Whitelisted Access to New Drip and Collections (All Pieces
+            Brought Forth). Map 2 the Metaverse Location Based Exclusive NFT
+            Collectibles. Everyday Patchwork Exclusive Chronicle Mints.
+            Exclusive Access to the Distributed Network of Fashion Galleries for
+            On-Site Minting and Other Unique Experiences.
+          </AchieveItem>
           {/* <AchieveItem 
             title='Benjamin Righetti'
           >
@@ -151,17 +156,22 @@ Early and Whitelisted Access to New Drip and Collections (All Pieces Brought For
         </div>
 
         <div className={styles.introDesc2}>
-        Giving voice to a kind of cryptographic language 
-        creating portal hopping pathways between the metaverse 
-        and the streets.<br />
+          Giving voice to a kind of cryptographic language creating portal
+          hopping pathways between the metaverse and the streets.
+          <br />
         </div>
       </div>
 
       <div className={styles.paletteWrapper}>
+        <div className={styles.title}>
+          BECOME A PATRON <br />
+          &<br />
+          JOIN THE DAO
+        </div>
         <AvatarPalette />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PatronSection
+export default PatronSection;

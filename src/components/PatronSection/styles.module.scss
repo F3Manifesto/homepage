@@ -1,33 +1,39 @@
-
 .patronWrapper {
   display: flex;
+  padding-top: 13.49vw;
+  padding-left: 2.44vw;
+  padding-right: 2.44vw;
+  padding-bottom: 6vw;
+
+  @media (max-width: 786px) {
+    flex-direction: column;
+
+    .introWrapper,
+    .paletteWrapper {
+      width: unset !important;
+    }
+  }
 
   .title {
-    position: absolute;    
-    width: 56.82vw;
-    height: 20.31vw;
-    left: 39.63vw;
-    top: 15.99vw;
-
-    font-family: 'Arima Madurai';
+    font-family: "Arima Madurai";
     font-style: normal;
     font-weight: 400;
     font-size: 6.77vw;
     line-height: 100%;
 
     text-align: right;
-    color: #FFFFFF;
+    color: #ffffff;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
   }
 
   .introWrapper {
     // position: absolute;
     width: 29.27vw;
-    // height: 65.73vw;
-    margin-left: 2.44vw;
-    margin-top: 13.49vw;
-    margin-bottom: 6vw;
     padding: 1vw;
+
+    @media (max-width: 786px) {
+      margin-bottom: 1rem;
+    }
 
     color: #00229d;
 
@@ -43,10 +49,19 @@
     .introTitle {
       margin-top: 40px;
       font-size: 1.4vw;
+
+      @media (max-width: 786px) {
+        margin-top: 20px;
+        font-size: 2vw;
+      }
     }
 
     .achieveItems {
       margin-top: 40px;
+
+      @media (max-width: 786px) {
+        margin-top: 20px;
+      }
     }
 
     .introDesc2 {
@@ -55,11 +70,7 @@
   }
 
   .paletteWrapper {
-    position: absolute;
     width: 62.5vw;
-    left: 34vw;
-    // bottom: 6vw;
-    top: 45vw;
     color: #00229d;
   }
 }

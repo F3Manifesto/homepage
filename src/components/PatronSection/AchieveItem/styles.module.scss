@@ -16,9 +16,16 @@
 
   .title {
     letter-spacing: 0.1vw;
+
+    @media (max-width: 786px) {
+      font-size: 2vw;
+    }
   }
 
   .description {
+    @media (max-width: 786px) {
+      font-size: 1.5vw;
+    }
     color: gray;
     font-size: 0.6vw;
     text-transform: uppercase;

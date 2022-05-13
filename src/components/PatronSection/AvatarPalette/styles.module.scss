@@ -1,4 +1,4 @@
-@import '../../../assets/scss/helpers/variables.scss';
+@import "../../../assets/scss/helpers/variables.scss";
 
 .paletteWrapper {
   display: flex;
@@ -14,43 +14,56 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-  
+
+      @media (max-width: 786px) {
+        margin-top: 1rem;
+      }
+
       .title {
         font-size: 1.5vw;
         font-weight: bold;
       }
-  
+
       .description {
-  
+        @media (max-width: 786px) {
+          font-size: 1.5vw;
+        }
       }
     }
-  
+
     .palette {
       margin-top: 5vw;
       display: grid;
       grid-template-columns: repeat(12, 4.3vw);
+
+      @media (max-width: 786px) {
+        grid-template-columns: repeat(12, 7.2vw);
+
+        .paletteItem {
+          height: 7.2vw !important;
+        }
+      }
       grid-gap: 0.7vw;
       justify-content: center;
-      
+
       .paletteItem {
         height: 4.3vw;
         background-color: #00229d;
-  
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           border-radius: 25%;
           overflow: hidden;
-  
+
           transform-origin: center center;
           transform: scale(1.05);
         }
       }
     }
-  
   }
-  
+
   .viewAllButton {
     display: block;
     width: 100%;

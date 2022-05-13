@@ -1,7 +1,6 @@
-@import '../../assets/scss/helpers/variables.scss';
+@import "../../assets/scss/helpers/variables.scss";
 
 .howToSectionWrapper {
-
   .category {
     position: absolute;
     width: 27.34vw;
@@ -11,7 +10,7 @@
 
     li {
       color: white;
-      font-family: 'Anonymous Pro';
+      font-family: "Anonymous Pro";
       font-style: normal;
       font-weight: 400;
       font-size: 6.25vw;
@@ -31,7 +30,6 @@
         background-color: white;
         color: $blue;
       }
-
     }
   }
 
@@ -41,8 +39,13 @@
     height: 26.56vw;
     left: 24.73vw;
     top: 16.56vw;
-    
-    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #322EF9 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background: radial-gradient(
+        86.8% 314.01% at 90% 7.45%,
+        #322ef9 0%,
+        rgba(73, 69, 241, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     opacity: 0.9;
     z-index: 4;
   }
@@ -53,8 +56,13 @@
     height: 33.33vw;
     left: 23.17vw;
     top: 15vw;
-    
-    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #4340F3 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background: radial-gradient(
+        86.8% 314.01% at 90% 7.45%,
+        #4340f3 0%,
+        rgba(73, 69, 241, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     opacity: 0.9;
     z-index: 3;
   }
@@ -65,8 +73,13 @@
     height: 35.41vw;
     left: 21.09vw;
     top: 8.75vw;
-    
-    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #3531F5 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background: radial-gradient(
+        86.8% 314.01% at 90% 7.45%,
+        #3531f5 0%,
+        rgba(73, 69, 241, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     opacity: 0.9;
     z-index: 2;
   }
@@ -74,12 +87,17 @@
   .rect4 {
     position: absolute;
 
-    width: 67.70vw;
+    width: 67.7vw;
     height: 40.62vw;
     left: 24.73vw;
     top: 12.55vw;
-    
-    background: radial-gradient(86.8% 314.01% at 90% 7.45%, #231FD6 0%, rgba(73, 69, 241, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background: radial-gradient(
+        86.8% 314.01% at 90% 7.45%,
+        #231fd6 0%,
+        rgba(73, 69, 241, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     opacity: 0.9;
     z-index: 1;
   }
@@ -92,7 +110,7 @@
     top: 17.55vw;
     z-index: 5;
   }
-  
+
   .buttonWrapper {
     z-index: 5;
     position: absolute;
@@ -108,11 +126,25 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 576px) {
+        width: 100px;
+      }
+
       button {
         transition: 0.3s all;
         &:hover {
           transition: 0.3s all;
           transform: scale(1.1);
+        }
+
+        @media (max-width: 576px) {
+          width: 20px;
+          height: 20px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }

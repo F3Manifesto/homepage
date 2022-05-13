@@ -183,26 +183,42 @@ function Landing(props) {
         <div className={styles.wrapper}>
           <section className={styles.initSection} id="init_section">
             <div className={styles.imageWindow} id="image_window">
-              <img
-                src="/images/homepage/product36.png"
+              <video
                 className={[styles.backImage, styles.show].join(" ")}
+                autoPlay
+                muted
+                loop
                 id="back_image1"
-              />
-              <img
-                src="/images/homepage/cypher1.png"
+              >
+                <source src="/video/allhistorylost.mp4" />
+              </video>
+              <video
                 className={styles.backImage}
+                autoPlay
+                muted
+                loop
                 id="back_image2"
-              />
-              <img
-                src="/images/homepage/cypher1.png"
+              >
+                <source src="/video/coined.mp4" />
+              </video>
+              <video
+                autoPlay
+                loop
+                muted
                 className={styles.backImage}
                 id="back_image3"
-              />
-              <img
-                src="/images/homepage/init_image4.png"
+              >
+                <source src="/video/dez.mp4" />
+              </video>
+              <video
+                autoPlay
+                loop
+                muted
                 className={styles.backImage}
                 id="back_image4"
-              />
+              >
+                <source src="/video/intro.mp4" />
+              </video>
             </div>
 
             <div className={styles.qrCodeGround}>
