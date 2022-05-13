@@ -188,6 +188,8 @@ function Landing(props) {
                 autoPlay
                 muted
                 loop
+                playsInline
+                webkitPlaysInline
                 id="back_image1"
               >
                 <source src="/video/allhistorylost.mp4" />
@@ -197,6 +199,8 @@ function Landing(props) {
                 autoPlay
                 muted
                 loop
+                playsInline
+                webkitPlaysInline
                 id="back_image2"
               >
                 <source src="/video/coined.mp4" />
@@ -214,6 +218,8 @@ function Landing(props) {
                 autoPlay
                 loop
                 muted
+                playsInline
+                webkitPlaysInline
                 className={styles.backImage}
                 id="back_image4"
               >

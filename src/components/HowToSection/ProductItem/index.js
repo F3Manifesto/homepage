@@ -12,7 +12,14 @@ const ProductItem = (props) => {
         {image ? (
           <img src={image} className={styles.productImage} />
         ) : (
-          <video autoPlay loop muted className={styles.productImage}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            webkitPlaysInline
+            className={styles.productImage}
+          >
             <source src={video} />
           </video>
         )}
