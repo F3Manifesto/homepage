@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import React from 'react';
-import Document, { NextScript, Html, Main, Head } from 'next/document';
+import React from "react";
+import Document, { NextScript, Html, Main, Head } from "next/document";
 
 const scriptTxt = `
 (function () {
@@ -12,7 +12,7 @@ const scriptTxt = `
 })();
 `;
 
-const gaScriptTxt =`
+const gaScriptTxt = `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -40,27 +40,51 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <script dangerouslySetInnerHTML={{ __html: scriptTxt }} />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194369113-3"></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-194369113-3"
+          ></script>
           <script dangerouslySetInnerHTML={{ __html: gaScriptTxt }} />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Raleway"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Baumans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Arima+Madurai:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
-          <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"></link>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Raleway"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Baumans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Arima+Madurai:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+          ></link>
           {this.getPreloadFontsLinks()}
           {/* ipfs next.js fix */}
           <style
@@ -182,6 +206,11 @@ class MyDocument extends Document {
             @font-face {
               font-family: "Just Old Fashion";
               src: url("./fonts/JustOldFashion.ttf");
+              font-weight: 400;
+            }
+            @font-face {
+              font-family: "Akira Expanded";
+              src: url("./fonts/Akira Expanded Demo.otf");
               font-weight: 400;
             }
             @font-face {

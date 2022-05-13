@@ -1,5 +1,5 @@
 .footer {
-  background: #4E4AFF;
+  background: #4e4aff;
   position: relative;
 }
 
@@ -13,39 +13,55 @@
 
 .footerWrapper {
   color: white;
-  background: #4E4AFF;
+  background: #4e4aff;
   margin: auto;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 47px;
+  padding-bottom: 47px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .footerWrapper .centerWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  padding-left: 34px;
-  padding-right: 34px;
+  // align-items: center;
 }
 
 .footerWrapper .description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   font-size: 16px;
   line-height: 22px;
   text-align: left;
   text-transform: uppercase;
-  font-family: 'Lemon Milk';
-  font-weight: normal;
+  font-family: "Akira Expanded";
+
+  font-weight: 400;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.footerWrapper .description2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Akira Expanded";
+
+  font-weight: 400;
   font-style: normal;
   color: white;
 }
 
 .footerWrapper .imageLogo {
-  // height: 80px;
-  margin: auto;
+  height: 80px;
 }
 
 .footerWrapper .logo_big {
@@ -89,6 +105,7 @@
 .footerWrapper .youtubeIcon {
   width: 30px;
   height: 25px;
+  object-fit: contain;
 }
 
 .footerWrapper .gitbookIcon {
@@ -102,7 +119,6 @@
   margin-bottom: 20px;
 }
 
-  
 .footerWrapper .linkedinIcon {
   width: 35px;
 }
@@ -110,7 +126,7 @@
 a.footer-text-white {
   color: white;
 }
-  
+
 @media (max-width: 1440px) {
   .footerWrapper {
     max-width: 90%;
@@ -122,12 +138,13 @@ a.footer-text-white {
     flex-direction: column;
   }
 
-  .footerWrapper .description {
+  .footerWrapper .description,
+  .footerWrapper .description2 {
     font-size: 15px;
     line-height: 19px;
     text-align: center;
   }
-  
+
   .footerWrapper .iconsLine img {
     height: 25px;
     margin-right: 10px;
@@ -138,7 +155,7 @@ a.footer-text-white {
     margin-left: 5px;
   }
 
-  .footerWrapper .youtubeIcon{
+  .footerWrapper .youtubeIcon {
     width: 30px;
     height: 25px;
   }
@@ -166,9 +183,6 @@ a.footer-text-white {
     text-align: center;
   }
 
-
-
-   
   .footerWrapper .iconsLine {
     justify-content: center;
   }
@@ -192,7 +206,7 @@ a.footer-text-white {
 
   .footerWrapper .discordIcon {
     margin-right: 10px;
-  } 
+  }
 
   .footerWrapper .mirrorIcon {
     width: 30px;
@@ -209,12 +223,9 @@ a.footer-text-white {
     height: 33px;
   }
 }
- 
-  
-    @media (max-width: 420px) {
-  
-      
-    }
+
+@media (max-width: 420px) {
+}
 
 @media (max-width: 780px) {
   .footerWrapper {
@@ -227,7 +238,7 @@ a.footer-text-white {
   }
 
   .footerWrapper .imageLogo {
-    height: 30px;
+    height: 70px;
     margin: auto;
   }
 
@@ -246,25 +257,25 @@ a.footer-text-white {
   }
 
   .footerWrapper .iconsLine img {
-    height: 20px;
-    width: 20px;
-    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    margin-right: 7px;
   }
 
   .footerWrapper .mediumIcon {
     height: 10px;
   }
   .footerWrapper .tiktokIcon {
-    margin-right: 5px;
+    margin-right: 7px;
   }
 
   .footerWrapper .twitchIcon {
-    margin-right: 5px;
+    margin-right: 7px;
   }
 
   .footerWrapper .discordIcon {
-    margin-right: 10px;
-  } 
+    margin-right: 12px;
+  }
 
   .footerWrapper .mirrorIcon {
     width: 10px;
@@ -280,5 +291,4 @@ a.footer-text-white {
     width: 15px;
     height: 15px;
   }
-
 }
