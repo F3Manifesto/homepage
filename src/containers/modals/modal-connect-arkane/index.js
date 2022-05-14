@@ -31,10 +31,10 @@ const ModalConnectArkane = ({ className, title }) => {
       {createPortal(
         <Modal onClose={() => handleClose()} title={title} className={styles.connectwallet}>
           <div className={styles.modalItem} onClick={() => handleClick(WALLET_ARKANE)}>
-            <span className={styles.modalsTextForIcon}>Arkane Wallet</span>
+            <span className={styles.modalsTextForIcon}>Venly Wallet</span>
             <img
               className={styles.modalIcon}
-              src="https://raw.githubusercontent.com/ArkaneNetwork/content-management/master/logo/Arkane_only_A.svg"
+              src="./images/venly.png"
               alt="arkane"
             />
           </div>
