@@ -34,7 +34,7 @@ const ModalConnectArkane = ({ className, title }) => {
             <span className={styles.modalsTextForIcon}>Venly Wallet</span>
             <img
               className={styles.modalIcon}
-              src="./images/venly.png"
+              src="./public/images/venly.png"
               alt="arkane"
             />
           </div>
