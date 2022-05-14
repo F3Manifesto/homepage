@@ -10,7 +10,7 @@ export const makeProductList = [
   {
     title: "Earrings Diagram Sketch File",
     seller: {},
-    image: "/images/homepage/product/editblender.png",
+    image: "/images/homepage/product/earringsedit.png",
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/edit/index.vue",
   },
   {
@@ -52,7 +52,7 @@ export const makeProductList = [
   {
     title: "Sweet Nights Audio File",
     seller: {},
-    image: "/images/homepage/product/sweetaudio.png",
+    image: "/images/homepage/product/sweetnight.png",
     href: "https://github.com/F3Manifesto/ccomaterials/tree/main/dmwjmusicnftcollab/audiofiles",
   },
 ];
@@ -71,7 +71,7 @@ export const collectProductList = [
     href: "https://market.f3manifesto.xyz/product/71/3/0/",
   },
   {
-    title: "What Do You Stand For?",
+    title: "What Do You Stand For? (Film Edition)",
     seller: {},
     video: "/video/nimpose.mp4",
     href: "https://market.f3manifesto.xyz/product/92/2/0/",
@@ -118,8 +118,7 @@ export const wearProductList = [
   {
     title: "Wallet Set Up T-Shirt",
     seller: {},
-    video: "/video/dez.mp4",
-    // image: '/images/homepage/product/product1.png',
+    image: "/images/homepage/product/product1.png",
     href: "https://popup.f3manifesto.xyz/product/wallet-42-set-up-t-shirt-white",
   },
   {
