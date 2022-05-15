@@ -4,7 +4,7 @@ export const makeProductList = [
   {
     title: "Edit Blender File",
     seller: {},
-    image: "/images/homepage/product/editblender.png",
+    image: "/images/homepage/product/edit.png",
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/edit/index.vue",
   },
   {
@@ -28,7 +28,7 @@ export const makeProductList = [
   {
     title: "Bakers Dozen Blender File",
     seller: {},
-    image: "/images/homepage/product/bakersdozen.png",
+    image: "/images/homepage/product/baker.png",
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/thebakersdozen/index.vue",
   },
   {
@@ -40,13 +40,13 @@ export const makeProductList = [
   {
     title: "Jump Gate Blender File",
     seller: {},
-    image: "/images/homepage/product/jumpgate.png",
+    image: "/images/homepage/product/jump.png",
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/zkzeitgeist/index.vue",
   },
   {
     title: "Cypherline Gloves CLO ZPAC File",
     seller: {},
-    image: "/images/homepage/product/glovesclo.png",
+    image: "/images/homepage/product/gloves.png",
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/zero/index.vue",
   },
   {
