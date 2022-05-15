@@ -192,39 +192,7 @@ function Landing(props) {
                 webkitPlaysInline
                 id="back_image1"
               >
-                <source src="/video/allhistorylost.mp4" />
-              </video>
-              <video
-                className={styles.backImage}
-                autoPlay
-                muted
-                loop
-                playsInline
-                webkitPlaysInline
-                id="back_image2"
-              >
-                <source src="/video/coined.mp4" />
-              </video>
-              <video
-                autoPlay
-                loop
-                muted
-                className={styles.backImage}
-                id="back_image3"
-              >
-                <source src="/video/dez.mp4" />
-              </video>
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                webkitPlaysInline
-                className={styles.backImage}
-                id="back_image4"
-              >
-                <source src="/video/intro.mp4" />
-              </video>
+                <source src="/video/tvscene.mp4" />
             </div>
 
             <div className={styles.qrCodeGround}>
