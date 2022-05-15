@@ -193,6 +193,7 @@ function Landing(props) {
                 id="back_image1"
               >
                 <source src="/video/tvscene.mp4" />
+                </video>
             </div>
 
             <div className={styles.qrCodeGround}>
