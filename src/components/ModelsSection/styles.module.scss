@@ -37,6 +37,11 @@
       text-decoration-line: underline;
     }
 
+    @media (max-width: 576px) {
+      font-size: 2vw;
+      line-height: 120%;
+    }
+
     color: #000000;
   }
 
