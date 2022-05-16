@@ -16,6 +16,30 @@
     transform-origin: 0 0;
   }
 
+  .link {
+    position: absolute;
+    width: 219px;
+    height: 20px;
+    left: 3vw;
+    top: 39vw;
+    font-family: "Anonymous Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+
+    color: #000000;
+  }
+
   .image1 {
     position: absolute;
     width: 45vw;

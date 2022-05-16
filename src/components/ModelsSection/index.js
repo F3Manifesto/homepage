@@ -9,6 +9,14 @@ const ModelsSection = () => {
       <img src="/images/bridgeshot.jpg" className={styles.image3} />
       <img src="/images/skagefirl.gif" className={styles.image2} />
       <img src="/images/whatisweb3.gif" className={styles.image4} />
+      <a
+        href="https://github.com/F3Manifesto/ccomaterials/tree/main/modelshots"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.link}
+      >
+        see the web3 models.
+      </a>
     </div>
   );
 };
