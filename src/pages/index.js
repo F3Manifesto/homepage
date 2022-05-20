@@ -27,6 +27,7 @@ import PatronSection from "@components/PatronSection";
 import BuyBadge from "@components/BuyBadge";
 import QRCodeBounce from "@components/QRCodeBounce";
 import ModelsSection from "@components/ModelsSection";
+import RealmSection from "@components/RealmSection";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -193,7 +194,7 @@ function Landing(props) {
                 id="back_image1"
               >
                 <source src="/video/tvscene.mp4" />
-                </video>
+              </video>
             </div>
 
             <div className={styles.qrCodeGround}>
@@ -285,6 +286,9 @@ function Landing(props) {
           </section>
           <section className={styles.cypherPunkSection} id="cypherpunk_section">
             <CypherPunkSection />
+          </section>
+          <section className={styles.realmSection} id="realm_section">
+            <RealmSection />
           </section>
           <section
             className={styles.hyperUtilitySection}

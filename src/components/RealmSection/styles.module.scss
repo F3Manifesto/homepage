@@ -1,0 +1,76 @@
+.wrapper {
+  background: #ffef62;
+  position: relative;
+  height: 50vw;
+
+  .text1 {
+    position: absolute;
+    width: 68.07vw;
+    height: 20.88vw;
+    left: 0;
+    top: 10vw;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.416vw;
+    line-height: 120%;
+    /* or 90% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    color: #ffffff;
+    z-index: 2;
+  }
+
+  .text2 {
+    position: absolute;
+    position: absolute;
+    width: 45.41vw;
+    height: 6.3vw;
+    left: 9vw;
+    top: 31vw;
+    font-family: "Fira Sans Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.34vw;
+    line-height: 120%;
+    text-align: center;
+
+    color: #e6bf00;
+    z-index: 2;
+  }
+
+  .video {
+    position: absolute;
+    width: 50.15vw;
+    height: 33.43vw;
+    left: 46.85vw;
+    top: 13vw;
+
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .link {
+    position: absolute;
+    width: 16.57vw;
+    height: 1.04vw;
+    left: 80.45vw;
+    top: 47.5vw;
+
+    font-family: "Berkeley";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 100%;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #000000;
+  }
+}

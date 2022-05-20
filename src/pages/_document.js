@@ -159,6 +159,11 @@ class MyDocument extends Document {
               font-weight: 900;
             }
             @font-face {
+              font-family: "Berkeley";
+              src: url("./fonts/EBGaramond-VariableFont_wght.ttf");
+              font-weight: 400;
+            }
+            @font-face {
               font-family: "Armata-Regular";
               src: url("./fonts/Armata-Regular.ttf");
               font-weight: 400;
