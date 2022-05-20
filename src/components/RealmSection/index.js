@@ -16,7 +16,7 @@ const RealmSection = () => {
         webkitPlaysInline
         className={styles.video}
       >
-        <source src="/video/Untitled video (4) (1).mp4" type="video/mp4" />
+        <source src="/video/Untitled video (4) (1).mp4" />
       </video>
       <a
         href="https://realmrunway.xyz/"
