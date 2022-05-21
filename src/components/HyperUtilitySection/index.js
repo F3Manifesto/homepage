@@ -6,7 +6,7 @@ import SwiperCore, { Navigation } from "swiper";
 const packs = [
   {
     url: "/images/homepage/packs/pack1.png",
-    link: "https://google.com",
+    link: "https://market.f3manifesto.xyz/product/57/3/0/",
   },
   {
     url: "/images/homepage/packs/pack2.png",
@@ -19,6 +19,7 @@ const packs = [
   },
   {
     url: "/images/homepage/packs/pack5.png",
+    link: "https://market.f3manifesto.xyz/product/58/3/0/",
   },
   {
     url: "/images/homepage/packs/pack6.png",
