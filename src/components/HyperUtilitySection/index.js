@@ -10,12 +10,15 @@ const packs = [
   },
   {
     url: "/images/homepage/packs/pack2.png",
+    link: "https://market.f3manifesto.xyz/product/141/2/0/",
   },
   {
     url: "/images/homepage/packs/pack3.png",
+    link: "https://market.f3manifesto.xyz/product/140/2/0/",
   },
   {
     url: "/images/homepage/packs/pack4.png",
+    link: "https://market.f3manifesto.xyz/product/143/2/0/",
   },
   {
     url: "/images/homepage/packs/pack5.png",
@@ -23,12 +26,15 @@ const packs = [
   },
   {
     url: "/images/homepage/packs/pack6.png",
+    link: "https://market.f3manifesto.xyz/product/145/2/0/",
   },
   {
     url: "/images/homepage/packs/pack7.png",
+    link: "https://market.f3manifesto.xyz/product/143/2/0/",
   },
   {
     url: "/images/homepage/packs/pack8.png",
+    link: "https://market.f3manifesto.xyz/product/144/2/0/",
   },
 ];
 
