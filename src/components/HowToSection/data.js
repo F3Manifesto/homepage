@@ -251,7 +251,7 @@ export const useProductList = [
     title: "CC0 Pixel Heart Enamel Pin",
     seller: {},
     video: "/images/homepage/product/pixelPin (1).mp4",
-    href: "https://popup.f3manifesto.xyz/product/cc0-146-pixel-heart-enamel-pin",
+    href: "https://popup.f3manifesto.xyz/product/cc0-147-pixel-heart-enamel-pin",
   },
   {
     title: "Opening Story",
