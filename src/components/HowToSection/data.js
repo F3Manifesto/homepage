@@ -16,7 +16,7 @@ export const makeProductList = [
   {
     title: "French Shop Disco Diffusion .txt File",
     seller: {},
-    image: "/images/homepage/product/frenshop.png",
+    image: "/images/homepage/product/frenchshop.png",
     href: "https://f3manifesto.mypinata.cloud/ipfs/QmeY8JEYR7gb6LPoDZdYqasTUmKVv9gWGrDvJ658FtvPWx",
   },
   {
