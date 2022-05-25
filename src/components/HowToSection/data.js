@@ -14,6 +14,12 @@ export const makeProductList = [
     href: "https://github.com/F3Manifesto/ccomaterials/blob/main/edit/index.vue",
   },
   {
+    title: "French Shop Disco Diffusion .txt File",
+    seller: {},
+    image: "/images/homepage/product/frenshop.png",
+    href: "https://f3manifesto.mypinata.cloud/ipfs/QmeY8JEYR7gb6LPoDZdYqasTUmKVv9gWGrDvJ658FtvPWx",
+  },
+  {
     title: "Aro: Run Aseprite File",
     seller: {},
     image: "/images/homepage/product/arorun.png",
@@ -54,6 +60,18 @@ export const makeProductList = [
     seller: {},
     image: "/images/homepage/product/sweetnight.png",
     href: "https://github.com/F3Manifesto/ccomaterials/tree/main/dmwjmusicnftcollab/audiofiles",
+  },
+  {
+    title: "Wizard Disco Diffusion .txt File",
+    seller: {},
+    image: "/images/homepage/product/wizard.png",
+    href: "https://f3manifesto.mypinata.cloud/ipfs/QmSzLtaLAmaG674pELhpUc4qykuWwzsNfifzLEKFjKqBsh",
+  },
+  {
+    title: "Tailor Shop Disco Diffusion .txt File",
+    seller: {},
+    image: "/images/homepage/product/tailorshop.png",
+    href: "https://f3manifesto.mypinata.cloud/ipfs/QmRsWUoEeVgWYu2owXH8yiZEsy8cwPwAbXiLQwY3MuBxfo",
   },
 ];
 
