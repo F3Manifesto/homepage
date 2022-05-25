@@ -32,7 +32,7 @@ const FreedomSection = () => {
         interesting and interactive enough to keep you engaged in your own self
         sovereign journeys.
       </div>
-      <a href="https://market.f3manifesto.xyz/product/54/2/0/" target="_blank">
+      <a href="https://web3fashionmanifesto.f3manifesto.xyz/manifesto/1/11/" target="_blank">
         <img
           className={styles.imageInsert}
           src="/images/homepage/insertCC0.png"

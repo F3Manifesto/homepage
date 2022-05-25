@@ -263,7 +263,7 @@ function Landing(props) {
               <BuyBadge
                 className={styles.badge4}
                 id={"badge4"}
-                link={"https://web3fashion.f3manifesto.xyz/"}
+                link={"https://web3fashionmanifesto.f3manifesto.xyz/"}
                 label={"READ MANIFESTO"}
               />
             </div>
