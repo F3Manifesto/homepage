@@ -25,6 +25,15 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    @media (max-width: 576px) {
+      font-family: 'SewnTight';
+      line-height: 100px;
+      top: 3vw;
+      left: 5vw;
+      -webkit-text-stroke-width: 0.5px;
+
+    }
   }
 
   .h2 {
@@ -46,6 +55,14 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    @media (max-width: 576px) {
+      font-family: 'SewnTight';
+      line-height: 100px;
+      top: 4.5vw;
+      -webkit-text-stroke-width: 0.2px;
+
+    }
   }
 
   .pfpButton{
@@ -57,6 +74,11 @@
 
     background: #FF3030;
     border-radius: 20px;
+
+    &:hover {
+    transform: scale(1.1);
+    transform: rotate(360deg);
+    }
 
   }
 
