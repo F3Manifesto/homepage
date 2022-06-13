@@ -19,6 +19,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import styles from "./styles.module.scss";
 import HowToSection from "@components/HowToSection";
+import PFPSection from "@components/PFPSection";
 import FreedomSection from "@components/FreedomSection";
 import CypherPunkSection from "@components/CypherPunkSection";
 import HyperUtilitySection from "@components/HyperUtilitySection";
@@ -277,6 +278,9 @@ function Landing(props) {
           </section>
           <section className={styles.howtoSection} id="howto_section">
             <HowToSection />
+          </section>
+          <section className={styles.pfpSection} id="pfp_section">
+            <PFPSection />
           </section>
           <section className={styles.modelsSection} id="models_section">
             <ModelsSection />

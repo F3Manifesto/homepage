@@ -136,6 +136,12 @@ class MyDocument extends Document {
             }
 
             @font-face {
+              font-family: "SewnTight";
+              src: url("./fonts/SewnTight.ttf");
+              font-weight: 400;
+            }
+
+            @font-face {
               font-family: "Internal Rainbows";
               src: url("./fonts/Internal Rainbows.otf");
               font-weight: 400;
