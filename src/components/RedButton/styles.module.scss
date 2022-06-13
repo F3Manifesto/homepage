@@ -28,4 +28,12 @@
     transition: 0.3s all;
     transform: scale(1.5px);
   }
+
+  @media (max-width: 576px) {
+    min-width: 17vw;
+    height: 6vw;
+    line-height: 100%;
+
+
+  }
 }
