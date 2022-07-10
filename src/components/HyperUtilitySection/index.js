@@ -36,6 +36,22 @@ const packs = [
     url: "/images/homepage/packs/pack8.png",
     link: "https://market.f3manifesto.xyz/product/144/2/0/",
   },
+  {
+    url: "/images/homepage/packs/pack9.png",
+    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+  },
+  {
+    url: "/images/homepage/packs/pack10.png",
+    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+  },
+  {
+    url: "/images/homepage/packs/pack11.png",
+    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+  },
+  {
+    url: "/images/homepage/packs/pack12.png",
+    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+  },
 ];
 
 const HyperUtilitySection = () => {
