@@ -46,7 +46,7 @@ const FreedomSection = () => {
 
       <a
         className={styles.circle1}
-        href="https://docs.f3manifesto.xyz/indie-film-series/the-sticky-uncut"
+        href="https://www.youtube.com/watch?v=K9NMXDPTnvg"
         target="_blank"
       >
         <img
