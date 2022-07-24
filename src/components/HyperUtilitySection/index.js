@@ -38,19 +38,19 @@ const packs = [
   },
   {
     url: "/images/homepage/packs/pack9.png",
-    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+    link: "https://market.f3manifesto.xyz/product/173/3/0/",
   },
   {
     url: "/images/homepage/packs/pack10.png",
-    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+    link: "https://market.f3manifesto.xyz/product/175/3/0/",
   },
   {
     url: "/images/homepage/packs/pack11.png",
-    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+    link: "https://market.f3manifesto.xyz/product/176/3/0/",
   },
   {
     url: "/images/homepage/packs/pack12.png",
-    link: "https://market.f3manifesto.xyz/product/144/2/0/",
+    link: "https://market.f3manifesto.xyz/product/174/3/0/",
   },
 ];
 
